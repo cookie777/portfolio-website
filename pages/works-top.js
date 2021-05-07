@@ -20,7 +20,7 @@ export default function WorksTop({allPostsMeta}) {
 
 
 export async function getStaticProps() {
-  const allPostsMeta = await getAllPostsMetaOf('works')
+  const allPostsMeta = getAllPostsMetaOf('works')
   return {
     props: {
       allPostsMeta
