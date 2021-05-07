@@ -73,45 +73,38 @@
 // }
 
 
-// import fs from 'fs'
-// import path from 'path'
+import fs from 'fs'
+import path from 'path'
 
-// import { renderToString } from 'react-dom/server'
+import ReactMarkdown from "react-markdown";
+import styled from 'styled-components';
 
-// import ReactMarkdown from "react-markdown";
-// import styled from 'styled-components';
+const StyledP = styled.p`
+font-size: 40px;
+color: green;
+`;
 
-// const StyledP = styled.p`
-// font-size: 40px;
-// color: green;
-// `;
+const components = {
+  p: StyledP
+}
 
-// const components = {
-//   p: StyledP
-// }
+export default function TestPage({ source }) {
 
-// export default function TestPage({ rhtml }) {
-
-//   return (
-//     <div>
-//       <div dangerouslySetInnerHTML={{ __html: rhtml}} />
-//     </div>
+  return (
+    <div>
+      <ReactMarkdown children={source} components={components}/>
+    </div>
       
-//   )
-// }
+  )
+}
 
-// export async function getStaticProps() {
-//   const postsDirectory = path.join(process.cwd(), 'posts')
-//   const fullPath = path.join(postsDirectory + '/' + `works`, `project1.md`)
-//   const source = fs.readFileSync(fullPath, 'utf8')
+export async function getStaticProps() {
+  const postsDirectory = path.join(process.cwd(), 'posts')
+  const fullPath = path.join(postsDirectory + '/' + `works`, `project1.md`)
+  const source = fs.readFileSync(fullPath, 'utf8')
 
-//   const rhtml = renderToString(
-//     <ReactMarkdown children={source} components={components}/>
-//   )
-
-
-//   return { props: { rhtml } }
-// }
+  return { props: { source } }
+}
 
 
 
