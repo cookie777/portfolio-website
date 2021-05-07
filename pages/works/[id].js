@@ -1,6 +1,7 @@
 import { getAllPostIdsFrom, getSinglePostDataOf } from '../../lib/posts'
 
-import styles from './works.module.css'
+// import styles from '../../styles/works.module.scss'
+import styles from './works.module.scss'
 
 export default function Works({postData}) {
 
