@@ -1,11 +1,11 @@
 import { getAllPostIdsFrom, getSinglePostDataOf } from '../../lib/posts'
 
-// import styles from './works.module.css'
+import styles from './works.module.css'
 
 export default function Works({postData}) {
 
   return (
-    <div>
+    <div className={styles.test}>
       {postData.title}
       <br />
       {postData.id}

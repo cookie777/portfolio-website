@@ -1,26 +1,22 @@
 import fs from 'fs'
 import path from 'path'
-import styled from 'styled-components';
 import ReactMarkdown from "react-markdown";
-
+import Markdown from "react-markdown";
+import styled from 'styled-components';
 
 const StyledP = styled.p`
-  font-size: 32px;
-  color: green;
+font-size: 12px;
+color: green;
 `;
-// const StyledP = props => <p style={{
-//   fontSize: '40px', 
-//   lineHeight: 1.6,
-//   color: 'red',
-// }} />
-const components = {
-  p: StyledP
-}
 
 export default function TestPage({ source }) {
   return (
     <div>
-      <ReactMarkdown children={source} components={components}/>
+      <Markdown
+        components={{
+          p: StyledP
+      }}/>
+      <ReactMarkdown children={source}/>
     </div>
   )
 }
