@@ -1,0 +1,12 @@
+@import "all";
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  @include lg {
+    grid-template-columns: 3fr 1fr;
+  }
+  color: brown;
+}
+
+// grid-template-columns: 1fr;

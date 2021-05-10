@@ -1,0 +1,14 @@
+@import "all";
+
+.mobile {
+  @include lg {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+  @include lg {
+    display: inline;
+  }
+}

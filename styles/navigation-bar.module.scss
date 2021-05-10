@@ -1,0 +1,24 @@
+@import "all";
+
+.top {
+  color: darkorange;
+  position: fixed;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 3rem;
+  .menu {
+    display: none;
+    @include lg {
+      display: inline;
+    }
+  }
+}
+
+.bottom {
+  color: indigo;
+  bottom: 0;
+  position: fixed;
+  @include lg {
+    display: none;
+  }
+}

@@ -1,14 +1,16 @@
-html{
+@import "all";
+
+html {
   font-size: 12.5px;
-  @include md{
-      font-size: 16px;
+  @include md {
+    font-size: 16px;
   }
   scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 30px;
   color: $secondary-color;
   max-width: 1096px;
@@ -16,21 +18,21 @@ body {
   margin: 0 auto;
 }
 
-.wrapper{
+.wrapper {
   margin: 2rem 2rem 0 2rem;
 }
 
 // reset a tag
-a{
+a {
   text-decoration: none;
-  &:link{
-      color: $secondary-color;
+  &:link {
+    color: $secondary-color;
   }
-  &:visited{
-      color: $secondary-color;
+  &:visited {
+    color: $secondary-color;
   }
-  &:hover{
-      color: $accent-color;
+  &:hover {
+    color: $accent-color;
   }
 }
 
@@ -43,8 +45,8 @@ h1 {
   font-weight: 900;
   font-size: 3rem;
   line-height: 117.5%;
-  @include lg{
-      font-size: 4.5rem;
+  @include lg {
+    font-size: 4.5rem;
   }
 }
 
