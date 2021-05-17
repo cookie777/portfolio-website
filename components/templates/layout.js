@@ -5,7 +5,9 @@ export default function Layout({ children }) {
   return (
     <div>
       <NavigationBar />
-      {children}
+      <div>
+        {children}
+      </div>
     </div>
   )
 }
