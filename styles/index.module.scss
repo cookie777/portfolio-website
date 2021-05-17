@@ -1,10 +1,11 @@
-@import "all";
+@import "common";
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  @include lg {
-    grid-template-columns: 3fr 1fr;
+  @include xlg {
+    grid-template-columns: auto 400px;
+    column-gap: 160px;
   }
   color: brown;
 }
