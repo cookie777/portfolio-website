@@ -9,29 +9,20 @@ export default function NavigationBar() {
     <div>
       <div className={styles.top}>
 
-        <div className={styles.left}>
-          {/* logo */}
-          <div className={styles.logo}>
-            tak8
-          </div>
-
-          {/* about */}
-          {menuItems.slice(1, 2).map(({ path, menuName }) => {
-            return (
-              <NavigationTopButton path={path} menuName={menuName} key={path} />
-            )
-          })}
+        {/* logo */}
+        <div className={styles.logo}>
+          tak8
         </div>
 
-        <div className={styles.right}>
-          {/* works, blogs, contact */}
-          {menuItems.slice(2).map(({ path, menuName }) => {
-            return (
-              <NavigationTopButton path={path} menuName={menuName} key={path} />
-            )
-          })}
+        {/* menu */}
+        <div className={styles.menu}>
+          {/* about, works, blogs, contact */}
+          <NavigationTopButton path={"about"} menuName={"About"} />
+          <div className={styles.space}></div>
+          <NavigationTopButton path={"works"} menuName={"Works"} />
+          <NavigationTopButton path={"blogs"} menuName={"Blogs"} />
+          <NavigationTopButton path={"contact"} menuName={"Contact"} />
         </div>
-
       </div>
 
       {/* bottom menus */}
@@ -41,7 +32,7 @@ export default function NavigationBar() {
         })}
       </div>
 
-    </div>
+    </div >
   )
 }
 
