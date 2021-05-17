@@ -1,4 +1,3 @@
-import { BottomMenu } from "@components/organism/bottom-menu";
 import NavigationBar from "@components/organism/navigation-bar";
 import { Head } from "next/document";
 

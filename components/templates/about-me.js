@@ -1,5 +1,5 @@
 import PostContent from "./post-content";
-import styles from '@styles/home-about-me.module.scss';
+import styles from '@styles/about-me.module.scss';
 
 export function AboutMe({ postData }) {
   return (
