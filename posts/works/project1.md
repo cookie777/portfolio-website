@@ -1,5 +1,6 @@
 ---
 title: 'Work3: When to Use Static Generation v.s. Server-side Rendering'
+description: "This is a description of markdown. 3 "
 date: '2020-01-02'
 ---
 

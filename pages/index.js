@@ -6,6 +6,8 @@ import PostList from '@components/templates/post-list'
 import Layout from '@components/templates/layout'
 import { AboutMe } from '@components/templates/about-me'
 
+// import Image from 'next/image'
+
 
 export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) {
   return (

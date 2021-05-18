@@ -8,6 +8,11 @@ date: '2021-02-03'
 - **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
 - **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
 
+<!-- ![alt text](https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg)
+![alt text](https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg)
+![alt text](https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg)
+![alt text](https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg) -->
+
 Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
 
 ```js
