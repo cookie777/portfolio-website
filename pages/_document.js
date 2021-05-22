@@ -13,6 +13,7 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800;900&display=swap" rel="stylesheet" />
         </Head>
         <body>
+          <script> </script>
           <Main />
           <NextScript />
         </body>
