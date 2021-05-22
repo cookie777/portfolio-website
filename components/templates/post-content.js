@@ -1,15 +1,17 @@
+import styled from 'styled-components'
+import ReactMarkdown from 'react-markdown'
+import { components } from "../atom/common"
 
 
 export default function PostContent({ postData }) {
   return (
     <div>
       {postData.title}
-      {/* <br />
-      {postData.id} */}
       <br />
       {postData.date}
       <br />
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <ReactMarkdown children={postData.fileContents} components={components} ></ReactMarkdown>
+
     </div>
   )
 }

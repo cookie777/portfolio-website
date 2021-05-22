@@ -1,0 +1,25 @@
+// {
+//   "presets": [
+//     "next/babel"
+//   ],
+//   "plugins": [
+//     [
+//       "babel-plugin-styled-components",
+//       {
+//         "ssr": true,
+//         "minify": true,
+//         "transpileTemplateLiterals": true,
+//         "pure": true,
+//         "displayName": true,
+//         "preprocess": false
+//       }
+//     ]
+//   ]
+// }
+
+// This is for prevent  "Prop className did not match" in styled-components
+
+{
+  "presets": ["next/babel"],
+  "plugins": [["styled-components", { "ssr": true, "preprocess": false }]]
+}
