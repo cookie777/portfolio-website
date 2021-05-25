@@ -7,7 +7,7 @@ const subFolder = 'blogs'
 export default function BlogsTop({ allPostsMeta }) {
   return (
     <Layout>
-      <PostList allPostsMeta={allPostsMeta} subFolder={subFolder} />
+      <PostList mainTitle={`Blogs`} allPostsMeta={allPostsMeta} subFolder={subFolder} />
     </Layout>
   )
 }

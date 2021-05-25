@@ -127,3 +127,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+// Reset `a` tag
+a {
+  text-decoration: none;
+  &:link {
+    color: $secondary-color;
+  }
+  &:visited {
+    color: $secondary-color;
+  }
+  &:hover {
+    // color: $accent-color;
+  }
+}

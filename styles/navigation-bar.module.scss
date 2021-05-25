@@ -2,6 +2,7 @@
 
 .top {
   position: fixed;
+  max-width: $max-width;
   // padding settings
   top: 0;
   left: 32px;
@@ -10,17 +11,17 @@
     left: 64px;
     right: 64px;
   }
-  padding-top: 40px;
-  padding-bottom: 24px;
+  padding-top: 64px;
+  padding-bottom: 32px;
 
   background-color: $main-color;
 
   display: flex;
   justify-content: space-between;
 
-  .logo {
+  .logo a {
     font-weight: 900;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .menu {
@@ -31,9 +32,11 @@
       grid-template-columns: repeat(4, 1fr);
       width: 60%;
     }
-    // desk top menu. 2nd element is fake space.
+
+    // If desk top menu. display menus, and 2nd element is fake space.
     @include xlg {
-      grid-template-columns: 80px 160px 160px 160px 80px;
+      width: calc(#{$right-content-width}/ 5 * 8);
+      grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
       :nth-child(3),
       :nth-child(4) {
         text-align: left;

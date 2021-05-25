@@ -11,7 +11,9 @@ export default function NavigationBar() {
 
         {/* logo */}
         <div className={styles.logo}>
-          tak8
+          <Link href={`/`}>
+            tak8
+          </Link>
         </div>
 
         {/* menu */}

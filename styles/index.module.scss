@@ -4,10 +4,9 @@
   display: grid;
   grid-template-columns: 1fr;
   @include xlg {
-    grid-template-columns: auto 400px;
-    column-gap: 160px;
+    grid-template-columns: auto $right-content-width;
+    column-gap: calc(#{$right-content-width}/ 5 * 2);
   }
-  color: brown;
 }
 
 // grid-template-columns: 1fr;

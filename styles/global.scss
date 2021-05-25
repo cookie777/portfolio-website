@@ -1,7 +1,7 @@
 @import "common";
 @import "reset";
 // Google Fonts
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800;900&display=swap");
 @import "prism-okaidia";
 
 html {
@@ -11,25 +11,13 @@ html {
 body {
   box-sizing: border-box;
   font-family: $font-family;
-  // max-width: 1312px;
+  line-height: 150%;
+  padding-top: calc(100px + 64px); // space for nav bar
+  max-width: $max-width;
   min-width: 350px;
-  margin: 32px;
+  margin: 0 32px;
   @include lg {
-    margin: 64px;
-  }
-}
-
-// Reset `a` tag
-a {
-  text-decoration: none;
-  &:link {
-    color: $secondary-color;
-  }
-  &:visited {
-    color: $secondary-color;
-  }
-  &:hover {
-    // color: $accent-color;
+    margin: 0 64px;
   }
 }
 
@@ -39,15 +27,17 @@ img {
 
 // basic font setting
 h1 {
+  margin-bottom: 1em; // Basically, set same margin bottom to font size
   font-weight: 900;
   font-size: 24px;
   @include lg {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
 h2 {
   font-weight: 800;
+  margin-bottom: 1em;
   font-size: 18px;
   @include lg {
     font-size: 24px;
@@ -56,6 +46,7 @@ h2 {
 
 h3 {
   font-weight: 800;
+  margin-bottom: 1em;
   font-size: 16px;
   @include lg {
     font-size: 18px;
@@ -65,9 +56,9 @@ h3 {
 p {
   font-weight: 400;
   font-size: 13px;
+  margin-bottom: 1em;
   @include lg {
     font-size: 16px;
   }
-  // line-height: 184%;
   letter-spacing: 1.24px;
 }

@@ -16,8 +16,8 @@ export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) 
           <AboutMe postData={aboutMePostData} />
         </div>
         <div>
-          <PostList allPostsMeta={workPostsMeta} subFolder={`works`} />
-          <PostList allPostsMeta={blogPostsMeta} subFolder={`blogs`} />
+          <PostList mainTitle={`Works`} allPostsMeta={workPostsMeta} subFolder={`works`} />
+          <PostList mainTitle={`Blog posts`} allPostsMeta={blogPostsMeta} subFolder={`blogs`} />
         </div>
       </div>
     </Layout>
