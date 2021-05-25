@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import styles from '@styles/navigation-bar.module.scss'
-import { NavigationBottomButton } from '@components/atom/navigation-bottom-button'
-import { NavigationTopButton } from '@components/atom/navigation-top-button'
+import styles from '@styles/navbar.module.scss'
+import { NavBarBottomButton } from '@components/atom/navbar-bottom-button'
+import { NavBarTopButton } from '@components/atom/navbar-top-button'
 
 export default function NavigationBar() {
   return (
@@ -19,18 +19,18 @@ export default function NavigationBar() {
         {/* menu */}
         <div className={styles.menu}>
           {/* about, works, blogs, contact */}
-          <NavigationTopButton path={"about"} menuName={"About"} />
+          <NavBarTopButton path={"about"} menuName={"About"} />
           <div className={styles.space}></div>
-          <NavigationTopButton path={"works"} menuName={"Works"} />
-          <NavigationTopButton path={"blogs"} menuName={"Blogs"} />
-          <NavigationTopButton path={"contact"} menuName={"Contact"} />
+          <NavBarTopButton path={"works"} menuName={"Works"} />
+          <NavBarTopButton path={"blogs"} menuName={"Blogs"} />
+          <NavBarTopButton path={"contact"} menuName={"Contact"} />
         </div>
       </div>
 
       {/* bottom menus */}
       <div className={styles.bottom}>
         {menuItems.map(({ path, menuName }) => {
-          return <NavigationBottomButton path={path} menuName={menuName} key={path} />
+          return <NavBarBottomButton path={path} menuName={menuName} key={path} />
         })}
       </div>
 

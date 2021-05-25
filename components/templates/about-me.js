@@ -3,15 +3,12 @@ import styles from '@styles/about-me.module.scss';
 
 export function AboutMe({ postData }) {
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.mobile}>
-        <p>this is shown in mobile</p>
         <h1>About me</h1>
-        <p>Description</p>
-        image
+        <p>Pulvinar dapibus ipsum enim, sit. Et eget sollicitudin netus ultricies tortor. Pellentesque hendrerit nulla. Quam eros, amet, arcu varius ut mauris. Leo ac lorem nunc est non.  quam eros, amet, arcu varius ut mauris. Leo ac lorem nunc est non.</p>
       </div>
       <div className={styles.desktop}>
-        <p>this is shown in desktop</p>
         <PostContent postData={postData} />
       </div>
     </div>

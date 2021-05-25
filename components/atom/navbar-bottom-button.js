@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export function NavigationBottomButton({ path, menuName }) {
+export function NavBarBottomButton({ path, menuName }) {
   return (
     <div>
       <Image

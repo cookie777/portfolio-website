@@ -1,5 +1,9 @@
 @import "common";
 
+.container {
+  margin-bottom: 40px;
+}
+
 .mobile {
   @include lg {
     display: none;
