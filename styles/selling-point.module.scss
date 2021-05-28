@@ -4,11 +4,14 @@
   h1 {
     font-size: 32px;
     margin-bottom: 32px;
+    @include lg {
+      font-size: 48px;
+    }
     @include xlg {
-      // padding-top: 16px;
       font-size: 68px;
       margin-bottom: 72px;
       line-height: 100%;
+      margin-left: -4.8px;
     }
   }
 
@@ -27,5 +30,5 @@
     }
   }
 
-  margin-bottom: 16px;
+  margin-bottom: 6em;
 }

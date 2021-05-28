@@ -4,7 +4,7 @@ export default function SellingPoint() {
   return (
     <div className={styles.container}>
       <h1>
-        Benefits of hiring me.
+        My selling points.
       </h1>
       <ul>
         {

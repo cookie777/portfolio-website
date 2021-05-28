@@ -3,67 +3,58 @@ title: 'About me'
 date: '2021-02-03'
 ---
 
-"😊😊😊😊😊"   Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+## Summary
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+iOS mobile developer with extensive experience in designing, programming, maintaining, and troubleshooting applications in agile team environments. Self-motivated professional who is passionate about learning emerging technologies in the mobile landscape, architectures, and trends. Great at team work, as well as agile methodology and always test and write clean stable code with documentation.
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+## Skills
 
-```js
-const doc = getDocBySlug(params.slug);
-```
+- Swift, Objective-C, Java, Python3, React.js, Figma, Sketch, Docker, Git
+- Writing Swift full-time for iOS development.  
+- Familiar with fundamental features as frameworks such as auto-layout in programatic way, REST-API, persistence data (core data, realm), diffable data source, and compositional layout,UIKit, MapKit, Core Graphics, Core Animations, and RxSwift, 
+- Experienced implementing practical design patterns such as MVC, MVVM, Delegate, Singleton, and Factory. 
+- Experienced working as a UI designer several times with other developers.  
+- Familiar with Apple’s Human Interface Guidelines
 
-```js
-console.log("abc")
-export function getAllPostIdsFrom(subFolder) {
-  const fileNames = fs.readdirSync(postsDirectory + '/' + subFolder)
+## Professional Experience
 
-  // Returns an array that looks like this:
-  /*
-    [
-      {
-        params: {
-          id: 'ssg-ssr'
-        }
-      },
-      {
-        params: {
-          id: 'pre-rendering'
-        }
-      }
-    ]
-  */
-  return fileNames.map(fileName => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, '')
-      }
-    }
-  })
-}
+### iOS Project / Navigation app 
 
-```
+*CICCC / Canada, Vancouver / 2021*
 
-```css
-pre[class*="language-"],
-code[class*="language-"] {
-	color: #d4d4d4;
-	font-size: 13px;
-	text-shadow: none;
-	font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	line-height: 1.5;
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-```
+- Created a navigation iOS app with collaborating other developers.  
+- Implement with REST-Api, modern Collection View, diffable data source, map kit, core location 
+- Worked as team leader, UI designer, manager.  
+- Working closely with other developers and UI designers in an agile environment.  
+- Planning to have iPhone/iPad apps in the App Store.  
+- Worked on bug fixing and improving application performance. 
+- Recorded exact details of errors during testing for further remediation. 
+- Checked on all source code to ensure usability by development staff. 
+- Created increased mobile adaptability for current apps in order to extend marketability. 
+
+
+### Work/ Video and Audio Engineer
+
+*Hiroshima, Japan / Apr 2016 – Aug 2020*
+
+- Broadcasted news by coordinating video and audio at the production control room.  
+- Directed operation and maintenance for network systems. 
+- Worked with clients to define goals and present them with optimal solutions. 
+- Set up and maintained equipment for studio recording sessions. 
+- Overcame challenges, such as faulty equipment and noise leakage, to produce great recordings. 
+- Used creative approach to coming up with the right sound quality and effects. 
+
+## Education 
+
+### Cornerstone International Community College of Canada	
+
+*Vancouver, Canada / Sep 2020 – Sep 2021*
+
+- Committing iOS projects collaborating with other developers. Learning Unit-testing code considering robustness, edge cases, and usability. Learning Objective-C library shared with other platforms.
+ 
+### Tokyo Metropolitan University		
+
+*Tokyo, Japan / April 2010 – March 2014, April 2014 – March 2016*
+
+- Bachelor & Master of Computer and Information Sciences.  
+- Specialized in software systems and information & Data visualization. GPA 3.3/4.0

@@ -5,12 +5,13 @@ import { useRouter } from 'next/router'
 
 export default function PostList({ mainTitle, allPostsMeta, subFolder }) {
   const path = useRouter().asPath
-  const currentClass = path == "/" ? styles.home : styles.else
+  const currentPage = path == "/" ? styles.home : styles.else
 
   return (
-    <div className={`${styles.container}`}>
-      <div className={`${currentClass}`}>
+    <div className={styles.container}>
+      <div className={currentPage}>
         <h2>{mainTitle}</h2>
+        <div></div>
         <div>
           {
             allPostsMeta.map(({ id, title, description, image }) => (
@@ -34,3 +35,4 @@ export default function PostList({ mainTitle, allPostsMeta, subFolder }) {
 
   )
 }
+// `${currentClass}`

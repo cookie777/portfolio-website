@@ -4,7 +4,7 @@ import styles from '@styles/index.module.scss'
 import SellingPoint from '@components/molecule/selling-point'
 import PostList from '@components/templates/post-list'
 import Layout from '@components/templates/layout'
-import { AboutMe } from '@components/templates/about-me'
+import { Resume } from '@components/templates/resume'
 
 
 export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) {
@@ -13,7 +13,7 @@ export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) 
       <div className={styles.grid}>
         <div>
           <SellingPoint />
-          <AboutMe postData={aboutMePostData} />
+          <Resume postData={aboutMePostData} />
         </div>
         <div>
           <PostList mainTitle={`Works`} allPostsMeta={workPostsMeta} subFolder={`works`} />

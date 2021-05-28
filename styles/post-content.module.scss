@@ -1,0 +1,23 @@
+@import "common";
+
+.container {
+  @include md {
+    // only direct and first div.
+    > div:first-of-type {
+      position: fixed;
+      padding-top: 8em;
+      span {
+        color: $secondary-sub1-color;
+      }
+    }
+  }
+
+  // main title is right side
+  display: grid;
+  @include md {
+    grid-template-columns: 2fr 5fr 1fr;
+  }
+  @include xlg {
+    grid-template-columns: 2.4fr 5.6fr 2fr;
+  }
+}

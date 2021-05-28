@@ -1,18 +1,14 @@
 @import "common";
 
-.container {
-  margin-bottom: 40px;
-}
-
 .mobile {
-  @include lg {
+  @include md {
     display: none;
   }
 }
 
 .desktop {
   display: none;
-  @include lg {
+  @include md {
     display: inline;
   }
 }

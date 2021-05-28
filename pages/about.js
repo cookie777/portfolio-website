@@ -1,9 +1,12 @@
-import { AboutMe } from "@components/templates/about-me";
+import { Resume } from "@components/templates/resume";
 import { getSinglePostDataOf } from "@lib/posts";
+import Layout from "@components/templates/layout";
 
 export default function About({ postData }) {
   return (
-    <AboutMe postData={postData} />
+    <Layout>
+      <Resume postData={postData} />
+    </Layout>
   )
 }
 
