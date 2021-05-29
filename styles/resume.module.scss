@@ -1,0 +1,14 @@
+@import "common";
+
+.mobile {
+  @include md {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+  @include md {
+    display: inline;
+  }
+}

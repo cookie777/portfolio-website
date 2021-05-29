@@ -1,0 +1,94 @@
+@import "common";
+
+.top {
+  position: fixed;
+  max-width: $max-width;
+  // padding settings
+  top: 0;
+  left: 32px;
+  right: 32px;
+  @include lg {
+    left: 64px;
+    right: 64px;
+  }
+  padding-top: 40px;
+  padding-bottom: 24px;
+
+  background-color: $main-color;
+
+  display: flex;
+  justify-content: space-between;
+
+  .logo a {
+    font-weight: 900;
+    font-size: 24px;
+  }
+
+  .menu {
+    display: none;
+    @include md {
+      display: grid;
+      justify-content: end;
+      grid-template-columns: repeat(4, 1fr);
+      width: 60%;
+    }
+
+    // If desk top menu. display menus, and 2nd element is fake space.
+    @include xlg {
+      width: calc(#{$right-content-width}/ 5 * 8);
+      grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+      :nth-child(3),
+      :nth-child(4) {
+        text-align: left;
+      }
+      :nth-child(4) {
+        padding-left: 24px;
+      }
+    }
+  }
+
+  // Fake space to make a gap between "about" and "works", when desktop size
+  .space {
+    display: none;
+    @include xlg {
+      display: block;
+    }
+  }
+
+  a {
+    align-self: end; // + grid -> bottom align
+    font-size: 16px;
+    font-weight: 800;
+    text-align: right;
+  }
+
+  //border
+  border-bottom: 4px $secondary-color solid;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  // These are needed to realize fixed + display flex (stretching width)
+  left: 32px;
+  right: 32px;
+
+  display: flex;
+  justify-content: space-between;
+
+  // top border
+  background-color: $main-color;
+  border-top: 4px solid $secondary-color;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  div {
+    text-align: center;
+    p {
+      margin-top: 8px;
+    }
+  }
+
+  @include md {
+    display: none;
+  }
+}

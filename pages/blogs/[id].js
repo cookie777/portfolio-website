@@ -2,9 +2,9 @@ import { getAllPostIdsFrom, getSinglePostDataOf } from '@lib/posts'
 import PostContent from '@components/templates/post-content'
 import Layout from '@components/templates/layout'
 
-const subFolder = 'works'
+const subFolder = 'blogs'
 
-export default function Works({ postData }) {
+export default function Blogs({ postData }) {
   return (
     <Layout>
       <PostContent postData={postData} />
