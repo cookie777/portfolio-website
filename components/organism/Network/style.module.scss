@@ -5,7 +5,10 @@
   .network {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 80px;
+    column-gap: 24px;
+    @include xlg {
+      column-gap: 80px;
+    }
     img {
       z-index: -1;
     }

@@ -16,7 +16,7 @@ export default function PostList({ mainTitle, allPostsMeta, subFolder }) {
           {
             allPostsMeta.map(({ id, title, description, image }) => (
               <Link href={`/${subFolder}/${id}`} key={id}>
-                <div className={styles.post}>
+                <a className={styles.post}>
                   <div>
                     <h3>{title}</h3>
                     <p>{description}</p>
@@ -25,7 +25,7 @@ export default function PostList({ mainTitle, allPostsMeta, subFolder }) {
                     src={image}
                     alt={`sample img`}
                   />
-                </div>
+                </a>
               </Link>
             ))
           }
