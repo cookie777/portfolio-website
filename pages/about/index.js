@@ -1,6 +1,6 @@
-import { Resume } from "@components/templates/resume";
+import { Resume } from "@components/templates/Resume";
 import { getSinglePostDataOf } from "@lib/posts";
-import Layout from "@components/templates/layout";
+import Layout from "@components/templates/Layout";
 
 export default function About({ postData }) {
   return (

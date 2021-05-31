@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "@styles/post-list.module.scss"
+import styles from "./style.module.scss"
 import Image from "next/image";
 import { useRouter } from 'next/router'
 
@@ -10,7 +10,7 @@ export default function PostList({ mainTitle, allPostsMeta, subFolder }) {
   return (
     <div className={styles.container}>
       <div className={currentPage}>
-        <h2>{mainTitle}</h2>
+        <h1>{mainTitle}</h1>
         <div></div>
         <div>
           {

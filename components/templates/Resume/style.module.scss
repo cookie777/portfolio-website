@@ -1,4 +1,4 @@
-@import "common";
+@import "@styles/common";
 
 .mobile {
   @include md {
@@ -9,6 +9,7 @@
 .desktop {
   display: none;
   @include md {
-    display: inline;
+    display: block;
+    margin-bottom: 80px;
   }
 }

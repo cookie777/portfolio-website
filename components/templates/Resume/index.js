@@ -1,5 +1,5 @@
-import PostContent from "./post-content";
-import { mobile, desktop } from '@styles/resume.module.scss';
+import PostContent from "../PostContent";
+import { mobile, desktop } from './style.module.scss';
 
 import { useRouter } from 'next/router'
 

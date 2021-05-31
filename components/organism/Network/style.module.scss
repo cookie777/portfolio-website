@@ -5,6 +5,9 @@
   .network {
     display: flex;
     flex-wrap: wrap;
-    gap: 96px;
+    column-gap: 80px;
+    img {
+      z-index: -1;
+    }
   }
 }

@@ -1,4 +1,4 @@
-import styles from '@styles/selling-point.module.scss'
+import styles from './style.module.scss'
 
 export default function SellingPoint() {
   return (

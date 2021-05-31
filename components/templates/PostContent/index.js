@@ -1,4 +1,4 @@
-import { container } from '@styles/post-content.module.scss';
+import { container } from './style.module.scss';
 
 export default function PostContent({ postData }) {
   return (

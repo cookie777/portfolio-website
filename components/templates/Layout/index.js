@@ -1,4 +1,4 @@
-import NavigationBar from "@components/organism/navigation-bar";
+import NavigationBar from "@components/organism/Navbar";
 import { Head } from "next/document";
 
 export default function Layout({ children }) {

@@ -1,4 +1,4 @@
-@import "common";
+@import "@styles/common";
 
 .grid {
   display: grid;
@@ -9,5 +9,3 @@
     column-gap: calc(#{$right-content-width}/ 5 * 2);
   }
 }
-
-// grid-template-columns: 1fr;

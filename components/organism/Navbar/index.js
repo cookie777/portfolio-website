@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import styles from '@styles/navbar.module.scss'
-import { NavBarBottomButton } from '@components/atom/navbar-bottom-button'
-import { NavBarTopButton } from '@components/atom/navbar-top-button'
+import styles from './style.module.scss'
+import { NavBarBottomButton } from '@components/atom/NavBarBottomButton'
+import { NavBarTopButton } from '@components/atom/NavbarTopButton'
 
 export default function NavigationBar() {
   return (
