@@ -1,0 +1,19 @@
+@import "@styles/common";
+
+.container {
+  > h2 {
+    font-size: 32px;
+  }
+  // main title is right side
+  display: grid;
+  @include lg {
+    > h2 {
+      position: fixed;
+      margin-top: 240px;
+    }
+    grid-template-columns: 2fr 5fr 1fr;
+  }
+  @include xlg {
+    grid-template-columns: 2.4fr 5.6fr 2fr;
+  }
+}

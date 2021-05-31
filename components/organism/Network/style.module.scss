@@ -1,0 +1,10 @@
+@import "@styles/common";
+
+.container {
+  margin-bottom: 64px;
+  .network {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 96px;
+  }
+}

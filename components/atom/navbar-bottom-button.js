@@ -4,7 +4,7 @@ export function NavBarBottomButton({ path, menuName }) {
   return (
     <div>
       <Image
-        src={`/icons/${path}.svg`}
+        src={`/icons/navbar/${path}.svg`}
         alt={menuName}
         width={24}
         height={24}
