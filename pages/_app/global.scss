@@ -1,8 +1,9 @@
-@import "common";
-@import "reset";
+@import "@styles/common";
+@import "@styles/reset";
+// Code syntax
+@import "@styles/prism-okaidia";
 // Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800;900&display=swap");
-@import "prism-okaidia";
 
 html {
   scroll-behavior: smooth;

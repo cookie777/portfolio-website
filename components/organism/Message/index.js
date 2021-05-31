@@ -1,10 +1,14 @@
+import { container } from './style.module.scss'
 
 const Message = () => {
   return (
-    <div>
+    <div className={`markdown`}>
       <h2>Feel free to chat!</h2>
-      <p>+1 236-982-9712</p>
-      <p>l.oeil.ballon@gmail.com</p>
+      <ul>
+        <li>+1 236-982-9712</li>
+        <li>l.oeil.ballon@gmail.com</li>
+      </ul>
+
     </div>
   )
 }

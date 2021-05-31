@@ -1,6 +1,6 @@
 import { getAllPostIdsFrom, getSinglePostDataOf } from '@lib/posts'
-import PostContent from '@components/templates/post-content'
-import Layout from '@components/templates/layout'
+import PostContent from '@components/templates/PostContent'
+import Layout from '@components/templates/Layout'
 
 const subFolder = 'blogs'
 

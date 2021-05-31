@@ -1,5 +1,5 @@
-import Layout from "@components/templates/layout"
-import PostList from "@components/templates/post-list"
+import Layout from "@components/templates/Layout"
+import PostList from "@components/templates/PostList/post-list"
 import { getAllPostsMetaOf } from "@lib/posts"
 
 

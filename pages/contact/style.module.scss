@@ -1,15 +1,13 @@
 @import "@styles/common";
 
 .container {
-  > h2 {
-    font-size: 32px;
-  }
-  // main title is right side
+  margin-top: 40px;
+  // To let main title in right side
   display: grid;
   @include lg {
-    > h2 {
+    > h1 {
       position: fixed;
-      margin-top: 240px;
+      margin-top: 120px;
     }
     grid-template-columns: 2fr 5fr 1fr;
   }
