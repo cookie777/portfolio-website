@@ -5,9 +5,9 @@
   .network {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
+    gap: 16px 40px;
     @include xlg {
-      column-gap: 80px;
+      gap: 80px;
     }
     img {
       z-index: -1;

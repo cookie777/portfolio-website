@@ -88,14 +88,15 @@ a:hover {
 .markdown {
   // These styles are only adapted for single post page generated from .md
   ul {
-    list-style: "△" outside none;
+    list-style: "a" outside none;
     padding-bottom: 4px;
-    padding-left: 30px; // this must need, (default it's hidden)
   }
 
   li {
     margin-bottom: 1em;
     line-height: 150%;
+    display: list-item;
+    margin-left: 30px; // this must need, (default it's hidden)
     padding-inline-start: 8px; // space between marker and item ・'-----'item
   }
 
