@@ -7,8 +7,9 @@
     flex-wrap: wrap;
     gap: 16px 40px;
     @include xlg {
-      gap: 80px;
+      gap: 24px 80px;
     }
+
     img {
       z-index: -1;
     }
