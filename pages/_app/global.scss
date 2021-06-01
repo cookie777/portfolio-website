@@ -16,7 +16,7 @@ body {
   padding-top: calc(92px + 40px); // space for top nav bar
   padding-bottom: 128px; // space for bottom nav bar
   max-width: $max-width;
-  min-width: 350px;
+  min-width: $min-width;
   margin: 0 32px;
   @include lg {
     margin: 0 64px;
@@ -88,15 +88,16 @@ a:hover {
 .markdown {
   // These styles are only adapted for single post page generated from .md
   ul {
-    list-style-type: "▴   ";
+    list-style-type: "▴";
     list-style-position: outside;
-    padding-left: 20px; // this must need, (default it's hidden)
     padding-bottom: 4px;
   }
 
   li {
     margin-bottom: 1em;
     line-height: 150%;
+    margin-left: 8px; // this must need, (default it's hidden)
+    padding-inline-start: 8px; // space between marker and item ・'-----'item
   }
 
   em {
