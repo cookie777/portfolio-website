@@ -5,14 +5,24 @@
   max-width: $max-width;
   // padding settings
   top: 0;
-  left: 32px;
-  right: 32px;
+  left: 24px;
+  right: 24px;
+  padding-top: 32px;
+  padding-bottom: 16px;
+
+  @include md {
+    left: 48px;
+    right: 48px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
   @include lg {
     left: 64px;
     right: 64px;
+    padding-top: 40px;
+    padding-bottom: 24px;
   }
-  padding-top: 40px;
-  padding-bottom: 24px;
 
   background-color: $main-color;
 

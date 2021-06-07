@@ -1,3 +1,8 @@
+# todo 
+- separate home and list for list
+- unifiry works, blogs, contact
+- unify moble, destop at resume
+
 # structure
 
 

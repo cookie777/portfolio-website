@@ -1,14 +1,15 @@
 @import "@styles/common";
 
 .container {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
   .network {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
+    gap: 16px 32px;
     @include xlg {
-      column-gap: 80px;
+      gap: 24px 80px;
     }
+
     img {
       z-index: -1;
     }

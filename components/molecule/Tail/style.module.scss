@@ -1,0 +1,39 @@
+@import "@styles/common";
+
+.container {
+  display: none;
+  @include lg {
+    display: block;
+  }
+  position: fixed;
+  right: 56px;
+  bottom: 0;
+
+  overflow: visible;
+  white-space: nowrap;
+  width: 2em;
+
+  h3 {
+    font-size: 16px;
+    padding-bottom: 0.1em;
+    margin-bottom: 0.8em;
+    transform: rotate(-90deg);
+
+    /* Legacy vendor prefixes that you probably don't need... */
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+  }
+
+  .line {
+    margin: auto;
+    background-color: $secondary-color;
+    width: 2px;
+    height: 100px;
+  }
+}

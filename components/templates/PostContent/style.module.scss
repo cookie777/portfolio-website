@@ -3,12 +3,9 @@
 .container {
   @include md {
     // only direct and first div.
-    > div:first-of-type {
+    > h3:first-of-type {
       position: fixed;
-      padding-top: 8em;
-      span {
-        color: $secondary-sub1-color;
-      }
+      top: 48%;
     }
   }
 
@@ -19,5 +16,11 @@
   }
   @include xlg {
     grid-template-columns: 2.4fr 5.6fr 2fr;
+  }
+
+  .title {
+    border-bottom: 1.6px solid $secondary-color;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
   }
 }

@@ -1,6 +1,7 @@
 import { getAllPostIdsFrom, getSinglePostDataOf } from '@lib/posts'
 import PostContent from '@components/templates/PostContent'
 import Layout from '@components/templates/Layout'
+import Tail from '@components/molecule/Tail'
 
 const subFolder = 'blogs'
 
@@ -8,6 +9,7 @@ export default function Blogs({ postData }) {
   return (
     <Layout>
       <PostContent postData={postData} />
+      <Tail message={`Blogs`} />
     </Layout>
   )
 }

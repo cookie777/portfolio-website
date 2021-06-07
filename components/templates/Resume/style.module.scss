@@ -4,10 +4,14 @@
   @include md {
     display: none;
   }
+  margin-bottom: 40px;
 }
 
 .desktop {
   display: none;
+  .title {
+    margin-bottom: 2em;
+  }
   @include md {
     display: block;
     margin-bottom: 80px;

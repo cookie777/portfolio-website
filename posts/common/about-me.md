@@ -1,11 +1,13 @@
 ---
 title: 'About me'
 date: '2021-02-03'
----
+description: iOS mobile developer with extensive experience in designing, programming, maintaining, and troubleshooting applications in agile team environments. Self-motivated professional who is passionate about learning emerging technologies in the mobile landscape, architectures, and trends. Great at team work, as well as agile methodology and always test and write clean stable code with documentation.
 
+---
+<!-- 
 ## Summary
 
-iOS mobile developer with extensive experience in designing, programming, maintaining, and troubleshooting applications in agile team environments. Self-motivated professional who is passionate about learning emerging technologies in the mobile landscape, architectures, and trends. Great at team work, as well as agile methodology and always test and write clean stable code with documentation.
+iOS mobile developer with extensive experience in designing, programming, maintaining, and troubleshooting applications in agile team environments. Self-motivated professional who is passionate about learning emerging technologies in the mobile landscape, architectures, and trends. Great at team work, as well as agile methodology and always test and write clean stable code with documentation. -->
 
 ## Skills
 
