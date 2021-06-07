@@ -1,17 +1,21 @@
-import { container } from './style.module.scss';
+
+import { container, title } from './style.module.scss';
+
 
 export default function PostContent({ postData }) {
   return (
     <div className={container}>
-      <div>
-        <span>{postData.date}</span>
-      </div>
+
+      <h3>{postData.date}</h3>
       <div></div>
+
       <div className={`markdown`}>
-        <h1>{postData.title}</h1>
+        <div className={title}>
+          <h1>{postData.title}</h1>
+          <p>{postData.description}</p>
+        </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
-
     </div>
   )
 }

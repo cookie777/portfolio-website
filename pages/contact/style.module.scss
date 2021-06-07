@@ -1,18 +1,37 @@
 @import "@styles/common";
 
 .container {
-  // To let main title in right side
   display: grid;
-  @include lg {
-    margin-top: 40px;
 
-    > h1 {
-      position: fixed;
-      margin-top: 120px;
+  h1 {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    text-decoration: underline;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  @include lg {
+    margin-top: calc((100vh - 96px) / 2 - 124px);
+    h1 {
+      font-size: 40px;
     }
-    grid-template-columns: 2fr 5fr 0fr;
+    .title {
+      top: 48%;
+      position: fixed;
+    }
+    grid-template-columns: 2fr 5fr;
   }
   @include xlg {
-    grid-template-columns: 2.4fr 5.6fr 2fr;
+    h1 {
+      font-size: 64px;
+      margin-bottom: 0;
+    }
+    grid-template-columns: 3fr 5.6fr;
   }
 }

@@ -20,8 +20,18 @@ export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) 
           <Message />
         </div>
         <div>
-          <PostList mainTitle={`Works`} allPostsMeta={workPostsMeta} subFolder={`works`} />
-          <PostList mainTitle={`Blog posts`} allPostsMeta={blogPostsMeta} subFolder={`blogs`} />
+          <PostList
+            pageTitle={`Works`}
+            pageSubTitle={`Experiences`}
+            allPostsMeta={workPostsMeta}
+            subFolder={`works`}
+          />
+          <PostList
+            pageTitle={`Blog posts`}
+            pageSubTitle={`Notes`}
+            allPostsMeta={blogPostsMeta}
+            subFolder={`blogs`}
+          />
         </div>
       </div>
     </Layout>

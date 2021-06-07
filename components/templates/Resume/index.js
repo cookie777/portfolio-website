@@ -1,5 +1,5 @@
 import PostContent from "../PostContent";
-import { mobile, desktop } from './style.module.scss';
+import { mobile, desktop, title } from './style.module.scss';
 
 import { useRouter } from 'next/router'
 
@@ -9,12 +9,15 @@ export function Resume({ postData }) {
   return currentPath == "/" ? (
     <div>
       <div className={mobile}>
-        <h1>About me</h1>
-        <p>Pulvinar dapibus ipsum enim, sit. Et eget sollicitudin netus ultricies tortor. Pellentesque hendrerit nulla. Quam eros, amet, arcu varius ut mauris. Leo ac lorem nunc est non.  quam eros, amet, arcu varius ut mauris. Leo ac lorem nunc est non.</p>
+        <h1>{postData.title}</h1>
+        <p>{postData.description}</p>
       </div>
       <div className={desktop}>
-        <div className={`markdown`}>
+        <div className={title}>
           <h1>{postData.title}</h1>
+          <p>{postData.description}</p>
+        </div>
+        <div className={`markdown`}>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </div>
       </div>

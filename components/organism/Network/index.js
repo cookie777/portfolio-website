@@ -4,7 +4,7 @@ import { container, network } from './style.module.scss'
 const Network = () => {
   return (
     <div className={container}>
-      <h2>Network</h2>
+
       <div className={network}>
         {data.map((props) => {
           return (
@@ -12,6 +12,7 @@ const Network = () => {
           )
         })}
       </div>
+      <h2>l.oeil.ballon@gmail.com</h2>
     </div>
   )
 }

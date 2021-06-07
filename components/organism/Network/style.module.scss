@@ -1,11 +1,11 @@
 @import "@styles/common";
 
 .container {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
   .network {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 40px;
+    gap: 16px 32px;
     @include xlg {
       gap: 24px 80px;
     }

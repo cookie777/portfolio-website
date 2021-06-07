@@ -3,14 +3,18 @@ import styles from "./style.module.scss"
 import Image from "next/image";
 import { useRouter } from 'next/router'
 
-export default function PostList({ mainTitle, allPostsMeta, subFolder }) {
+export default function PostList({ pageTitle, pageSubTitle, allPostsMeta, subFolder }) {
   const path = useRouter().asPath
-  const currentPage = path == "/" ? styles.home : styles.else
+  const currentPage = path == "/" ? styles.home : styles.list
 
   return (
     <div className={styles.container}>
       <div className={currentPage}>
-        <h1>{mainTitle}</h1>
+        <div className={styles.title}>
+          <h1>{pageTitle}</h1>
+          <h3>{pageSubTitle}</h3>
+          {/* <p>{`${allPostsMeta.length} articles so far.`}</p> */}
+        </div>
         <div></div>
         <div>
           {
@@ -32,7 +36,5 @@ export default function PostList({ mainTitle, allPostsMeta, subFolder }) {
         </div>
       </div>
     </ div >
-
   )
 }
-// `${currentClass}`
