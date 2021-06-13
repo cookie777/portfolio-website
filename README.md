@@ -3,10 +3,8 @@
 - unifiry works, blogs, contact
 - unify moble, destop at resume
 - works experiencd gird
-auto overflow -> twitter
-img -> icon , text margin top
-mail -> link
-web p
+
+webp
 
 # structure
 

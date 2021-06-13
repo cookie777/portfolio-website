@@ -1,13 +1,18 @@
 @import "@styles/common";
 
 .container {
-  margin-bottom: 40px;
   .network {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    // margin-top: 40px;
+
+    @include md {
+      grid-template-columns: repeat(2, auto);
+    }
+
     @include xlg {
-      gap: 24px 80px;
+      gap: 80px 80px;
     }
 
     img {

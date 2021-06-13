@@ -13,7 +13,6 @@ export default function PostList({ pageTitle, pageSubTitle, allPostsMeta, subFol
         <div className={styles.title}>
           <h1>{pageTitle}</h1>
           <h3>{pageSubTitle}</h3>
-          {/* <p>{`${allPostsMeta.length} articles so far.`}</p> */}
         </div>
         <div></div>
         <div>

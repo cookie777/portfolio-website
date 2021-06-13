@@ -17,7 +17,6 @@ export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) 
           <SellingPoint />
           <Resume postData={aboutMePostData} />
           <Network />
-          <Message />
         </div>
         <div>
           <PostList

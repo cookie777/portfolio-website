@@ -8,16 +8,8 @@
     margin-bottom: 0;
   }
 
-  h2 {
-    text-decoration: underline;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
   @include lg {
-    margin-top: calc((100vh - 96px) / 2 - 124px);
+    // margin-top: calc((100vh - 96px) / 2 - 124px);
     h1 {
       font-size: 40px;
     }
@@ -25,13 +17,14 @@
       top: 48%;
       position: fixed;
     }
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: 2fr 5fr 1fr;
   }
+
   @include xlg {
     h1 {
       font-size: 64px;
       margin-bottom: 0;
     }
-    grid-template-columns: 3fr 5.6fr;
+    grid-template-columns: 3fr 5.6fr 1fr;
   }
 }

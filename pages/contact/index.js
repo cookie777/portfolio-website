@@ -16,12 +16,9 @@ export default function Contact() {
           <h3>
             Networks.
           </h3>
-
         </div>
         <div></div>
-        <div>
-          <Network />
-        </div>
+        <Network />
       </div>
       <Tail message={`Feel free to chat!`} />
     </Layout>
