@@ -4,7 +4,10 @@
 - unify moble, destop at resume
 - works experiencd gird
 
-webp
+webp, crop
+strong
+a under
+code
 
 # structure
 

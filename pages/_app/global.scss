@@ -45,10 +45,10 @@ h1 {
 h2 {
   font-weight: 800;
   margin-bottom: 0.84em;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 124%;
   @include lg {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 /*
@@ -83,15 +83,22 @@ p {
   }
   letter-spacing: 1.24px;
 }
-p:last-of-type {
-  margin-bottom: 0em;
-}
+// p:last-of-type {
+//   margin-bottom: 0em;
+// }
 
+// These styles are only adapted for single post page generated from .md
 .markdown {
-  // These styles are only adapted for single post page generated from .md
   ul {
     list-style: disc outside none;
     padding-bottom: 4px;
+    margin-bottom: 1em;
+  }
+
+  ol {
+    list-style: decimal outside none;
+    padding-bottom: 4px;
+    margin-bottom: 1em;
   }
 
   li {

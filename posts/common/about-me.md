@@ -4,10 +4,6 @@ date: '2021-02-03'
 description: iOS mobile developer with extensive experience in designing, programming, maintaining, and troubleshooting applications in agile team environments. Self-motivated professional who is passionate about learning emerging technologies in the mobile landscape, architectures, and trends. Great at team work, as well as agile methodology and always test and write clean stable code with documentation.
 
 ---
-<!-- 
-## Summary
-
-iOS mobile developer with extensive experience in designing, programming, maintaining, and troubleshooting applications in agile team environments. Self-motivated professional who is passionate about learning emerging technologies in the mobile landscape, architectures, and trends. Great at team work, as well as agile methodology and always test and write clean stable code with documentation. -->
 
 ## Skills
 
@@ -32,9 +28,8 @@ iOS mobile developer with extensive experience in designing, programming, mainta
 - Worked on bug fixing and improving application performance. 
 - Recorded exact details of errors during testing for further remediation. 
 - Checked on all source code to ensure usability by development staff. 
-- Created increased mobile adaptability for current apps in order to extend marketability. 
-
-
+- Created increased mobile adaptability for current apps in order to extend marketability.
+  
 ### Work/ Video and Audio Engineer
 
 *Hiroshima, Japan / Apr 2016 – Aug 2020*
@@ -48,15 +43,15 @@ iOS mobile developer with extensive experience in designing, programming, mainta
 
 ## Education 
 
-### Cornerstone International Community College of Canada	
+### [Cornerstone International Community College of Canada](https://ciccc.ca/)
 
 *Vancouver, Canada / Sep 2020 – Sep 2021*
+- Committing iOS projects collaborating with other developers.
+- Learning Concurrency, Memory management, RxSwift, MVVM architectures, and Objective-C.
+- Learning Unit-testing code considering robustness, edge cases, and usability.
 
-- Committing iOS projects collaborating with other developers. Learning Unit-testing code considering robustness, edge cases, and usability. Learning Objective-C library shared with other platforms.
- 
-### Tokyo Metropolitan University		
+### [Tokyo Metropolitan University](https://www.tmu.ac.jp/english/index.html)
 
 *Tokyo, Japan / April 2010 – March 2014, April 2014 – March 2016*
-
 - Bachelor & Master of Computer and Information Sciences.  
 - Specialized in software systems and information & Data visualization. GPA 3.3/4.0
