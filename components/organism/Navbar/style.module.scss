@@ -1,6 +1,7 @@
 @import "@styles/common";
 
 .top {
+  z-index: 777;
   position: fixed;
   max-width: $max-width;
   // padding settings
@@ -77,6 +78,7 @@
 }
 
 .bottom {
+  z-index: 777;
   position: fixed;
   bottom: 0;
   // These are needed to realize fixed + display flex (stretching width)

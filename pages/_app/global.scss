@@ -73,6 +73,20 @@ h3 {
   margin-top: 1.64em;
 }
 
+h4 {
+  font-weight: 800;
+  margin-bottom: 0.64em;
+  font-size: 13px;
+  line-height: 164%;
+  @include lg {
+    font-size: 16px;
+  }
+}
+// Set top margin except after h1-h4. Because h1-h4 has margin-bottom
+*:not(h1, h2, h3, h4) + h4 {
+  margin-top: 1.64em;
+}
+
 p {
   font-weight: 400;
   font-size: 13px;
@@ -83,9 +97,10 @@ p {
   }
   letter-spacing: 1.24px;
 }
-// p:last-of-type {
-//   margin-bottom: 0em;
-// }
+
+strong {
+  font-weight: 600;
+}
 
 // These styles are only adapted for single post page generated from .md
 .markdown {
@@ -123,5 +138,14 @@ p {
   em {
     font-size: 0.9em;
     color: $secondary-sub2-color;
+  }
+
+  a {
+    text-decoration-line: underline;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
   }
 }
