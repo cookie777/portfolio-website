@@ -16,14 +16,14 @@ Of course this can be solve by using tableView or collectionView. However, those
 
 ## Short answer
 
-I found a way to realize this. The solution is 
+I found a way to realize this. The solution is
 
 - Set both scrollView and its content's constraint.
 - Set the content area of scrollView with `contentLayoutGuide`.
 
 The final example will like this. The content size is determined after the view is loaded and set. Even if you increase the content, the scroll is automatically adjusted!
 
-I created a sample project so you can easily look it.
+I created a [sample project](https://github.com/cookie777/SwiftTips/tree/main/DynamicSizeScrollView/DynamicSizeScrollView) so you can easily look it.
 
 ## Details
 
@@ -159,7 +159,7 @@ This is all! The key is [contentLayoutGuide](https://developer.apple.com/documen
    background-color:#ff0;border-radius: 6px;"
   />
 
-## More simply
+## More simply way
 
 Tired to prepare this? Don't worry! I prepared a custom subclass of UIStackView.
 
@@ -183,3 +183,5 @@ var scrollView = DynamicHeightScrollView(
 ## Conclusion
 
 When content view inside the scroll view is very large, or you're not sure how large it'll be, setting content constraint by using  `contentLayoutGuide` will easily realize the scrolling!
+
+You can look further from this [sample project](https://github.com/cookie777/SwiftTips/tree/main/DynamicSizeScrollView/DynamicSizeScrollView).
