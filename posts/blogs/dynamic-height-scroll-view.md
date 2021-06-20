@@ -2,7 +2,7 @@
 title: 'How to create scroll view capable with dynamic content size.'
 date: '2021-06-15'
 description: This blog explains how to create scroll view even you don't know the inside content size. The point is configure both scroll view and content's constraint with using `contentLayoutGuide`
-image: https://github.com/cookie777/images/blob/main/blogs/2021-06-Dynamic-size-scroll-view/content-view.webp?raw=true
+image: https://raw.githubusercontent.com/cookie777/images/main/blogs/2021-06-Dynamic-size-scroll-view/content-view.webp
 ---
 
 ## Situation
@@ -54,8 +54,9 @@ NSLayoutConstraint.activate([
 
 <img
   alt="scroll-view"
-  src="https://github.com/cookie777/images/blob/main/blogs/2021-06-Dynamic-size-scroll-view/scroll-view.webp?raw=true"
-  style="max-width:240px;width:100%"
+  src="https://raw.githubusercontent.com/cookie777/images/main/blogs/2021-06-Dynamic-size-scroll-view/scroll-view.webp"
+  style="max-width:240px;width:100%;border:2px solid #021a40;
+   background-color:#ff0;border-radius: 6px;"
   />
 
 
@@ -89,11 +90,6 @@ dynamicSizeContent.centerXAnchor.constraint(
 ).isActive = true
 ```
 
-<img
-  alt="content-view"
-  src="https://github.com/cookie777/images/blob/main/blogs/2021-06-Dynamic-size-scroll-view/content-view.webp?raw=true"
-  style="max-width:240px;width:100%"
-  />
 
 What is this doing? The first half decides the width of content. The content width is same as scroll size but 24 spaces shorter both from left and right. This is kind a padding if you want to set.
 
@@ -133,6 +129,13 @@ I also created a UIButton which will execute above function when it's tapped. Th
 
 Right now the scroll view is not working. Even if you add come sub views and set constrains to them, it won't scroll. This is because we haven't configure any content area.
 
+<img
+  alt="content-view"
+  src="https://raw.githubusercontent.com/cookie777/images/main/blogs/2021-06-Dynamic-size-scroll-view/content-view.webp"
+  style="max-width:240px;width:100%;border:2px solid #021a40;
+   background-color:#ff0;border-radius: 6px;"
+  />
+
 ### Configure the Content area
 
 Now let's set the content area for scroll view. 
@@ -151,9 +154,31 @@ This is all! The key is [contentLayoutGuide](https://developer.apple.com/documen
 
 <img
   alt="dynamic-size-scrolling"
-  src="https://github.com/cookie777/images/blob/main/blogs/2021-06-Dynamic-size-scroll-view/dynamic-size-scrolling.webp?raw=true"
-  style="max-width:240px;width:100%"
+  src="https://raw.githubusercontent.com/cookie777/images/main/blogs/2021-06-Dynamic-size-scroll-view/anime-scroll-demo.webp"
+  style="max-width:240px;width:100%;border:2px solid #021a40;
+   background-color:#ff0;border-radius: 6px;"
   />
+
+## More simply
+
+Tired to prepare this? Don't worry! I prepared a custom subclass of UIStackView.
+
+```swift
+// contentView can be dynamic height.
+var scrollView = DynamicHeightScrollView(
+    contentView: contentView,
+    padding: .init(top: 32, left: 32, bottom: 32, right: 32)
+  )
+```
+
+<img
+  alt="dynamic-size-scrolling"
+  src="https://raw.githubusercontent.com/cookie777/images/main/blogs/2021-06-Dynamic-size-scroll-view/anime-scroll-custom-class.webp"
+  style="max-width:240px;width:100%;border:2px solid #021a40;
+   background-color:#ff0;border-radius: 6px;"
+  />
+
+
 
 ## Conclusion
 
