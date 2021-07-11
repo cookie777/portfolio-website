@@ -1,10 +1,12 @@
 import { getAllPostsMetaOf, getSinglePostDataOf } from '@lib/posts'
 
-import styles from '@styles/index.module.scss'
-import SellingPoint from '@components/molecule/selling-point'
-import PostList from '@components/templates/post-list'
-import Layout from '@components/templates/layout'
-import { Resume } from '@components/templates/resume'
+import styles from './style.module.scss'
+import SellingPoint from '@components/molecule/SellingPoint'
+import PostList from '@components/templates/PostList/post-list'
+import Layout from '@components/templates/Layout'
+import { Resume } from '@components/templates/Resume'
+import Network from '@components/organism/Network'
+import Message from '@components/organism/Message'
 
 
 export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) {
@@ -14,10 +16,21 @@ export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) 
         <div>
           <SellingPoint />
           <Resume postData={aboutMePostData} />
+          <Network />
         </div>
         <div>
-          <PostList mainTitle={`Works`} allPostsMeta={workPostsMeta} subFolder={`works`} />
-          <PostList mainTitle={`Blog posts`} allPostsMeta={blogPostsMeta} subFolder={`blogs`} />
+          <PostList
+            pageTitle={`Works`}
+            pageSubTitle={`Experiences`}
+            allPostsMeta={workPostsMeta}
+            subFolder={`works`}
+          />
+          <PostList
+            pageTitle={`Blog posts`}
+            pageSubTitle={`Notes`}
+            allPostsMeta={blogPostsMeta}
+            subFolder={`blogs`}
+          />
         </div>
       </div>
     </Layout>
@@ -27,8 +40,8 @@ export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) 
 
 export async function getStaticProps() {
   const aboutMePostData = await getSinglePostDataOf(`common`, `about-me`)
-  const workPostsMeta = getAllPostsMetaOf(`works`)
-  const blogPostsMeta = getAllPostsMetaOf(`blogs`)
+  const workPostsMeta = await getAllPostsMetaOf(`works`)
+  const blogPostsMeta = await getAllPostsMetaOf(`blogs`)
   return {
     props: {
       aboutMePostData,

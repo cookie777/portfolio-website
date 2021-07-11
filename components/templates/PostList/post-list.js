@@ -1,0 +1,38 @@
+import Link from "next/link";
+import styles from "./style.module.scss"
+import Image from "next/image";
+import { useRouter } from 'next/router'
+
+export default function PostList({ pageTitle, pageSubTitle, allPostsMeta, subFolder }) {
+  const path = useRouter().asPath
+  const currentPage = path == "/" ? styles.home : styles.list
+
+  return (
+    <div className={styles.container}>
+      <div className={currentPage}>
+        <div className={styles.title}>
+          <h1>{pageTitle}</h1>
+          <h3>{pageSubTitle}</h3>
+        </div>
+        <div></div>
+        <div>
+          {
+            allPostsMeta.map(({ id, title, description, image }) => (
+              <Link href={`/${subFolder}/${id}`} key={id}>
+                <a className={styles.post}>
+                  <div>
+                    <h3>{title}</h3>
+                    <div dangerouslySetInnerHTML={{ __html: description }} />
+                  </div>
+                  <img
+                    src={image}
+                  />
+                </a>
+              </Link>
+            ))
+          }
+        </div>
+      </div>
+    </ div >
+  )
+}

@@ -1,0 +1,26 @@
+@import "@styles/common";
+
+.container {
+  @include md {
+    // only direct and first div.
+    > h3:first-of-type {
+      position: fixed;
+      top: 48%;
+    }
+  }
+
+  // main title is right side
+  display: grid;
+  @include md {
+    grid-template-columns: 2fr 5fr 1fr;
+  }
+  @include xlg {
+    grid-template-columns: 2.4fr 5.6fr 2fr;
+  }
+
+  .title {
+    border-bottom: 1.6px solid $secondary-color;
+    padding-bottom: 1.5em;
+    margin-bottom: 2em;
+  }
+}

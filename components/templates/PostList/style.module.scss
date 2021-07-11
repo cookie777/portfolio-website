@@ -1,0 +1,131 @@
+@import "@styles/common";
+
+// common style
+.container {
+  .post {
+    margin-bottom: 24px;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    column-gap: 16px;
+    align-items: center;
+    img {
+      z-index: -1;
+      display: block;
+      object-fit: cover;
+    }
+
+    p {
+      // Set max num of lines
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  padding-bottom: 48px;
+}
+
+// If post-list is in home
+.home {
+  padding-top: 40px;
+  //border
+  border-top: 2px $secondary-color solid;
+  .title {
+    display: block;
+  }
+
+  // Selecting posts in home. At laptop size, we display as 2 columns
+  > div {
+    @include md {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      column-gap: 48px;
+    }
+    @include lg {
+      column-gap: 64px;
+    }
+
+    @include xlg {
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 0em;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  img {
+    width: 120px;
+    height: 120px;
+    @include md {
+      width: 96px;
+      height: 96px;
+    }
+    @include lg {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    margin-top: 1em;
+    // display: none !important;
+  }
+}
+
+// If post-list is not in home
+.list {
+  // main title is right side
+  display: grid;
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 16px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  @include lg {
+    h1 {
+      font-size: 40px;
+    }
+    .title {
+      top: 48%;
+      position: fixed;
+    }
+    grid-template-columns: 2fr 5fr 1fr;
+  }
+  @include xlg {
+    h1 {
+      font-size: 64px;
+      margin-bottom: 0;
+    }
+    grid-template-columns: 3fr 5.6fr 2fr;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}

@@ -1,60 +1,78 @@
 ---
 title: 'About me'
 date: '2021-02-03'
+description: iOS mobile developer with extensive experience in designing, programming, maintaining, and troubleshooting applications in agile team environments. Self-motivated professional who is passionate about learning emerging technologies in the mobile landscape, architectures, and trends. Great at team work, as well as agile methodology and always test and write clean stable code with documentation. 
+
 ---
-
-## Summary
-
-iOS mobile developer with extensive experience in designing, programming, maintaining, and troubleshooting applications in agile team environments. Self-motivated professional who is passionate about learning emerging technologies in the mobile landscape, architectures, and trends. Great at team work, as well as agile methodology and always test and write clean stable code with documentation.
 
 ## Skills
 
-- Swift, Objective-C, Java, Python3, React.js, Figma, Sketch, Docker, Git
-- Writing Swift full-time for iOS development.  
-- Familiar with fundamental features as frameworks such as auto-layout in programatic way, REST-API, persistence data (core data, realm), diffable data source, and compositional layout,UIKit, MapKit, Core Graphics, Core Animations, and RxSwift, 
-- Experienced implementing practical design patterns such as MVC, MVVM, Delegate, Singleton, and Factory. 
-- Experienced working as a UI designer several times with other developers.  
-- Familiar with Apple’s Human Interface Guidelines
+✔ iOS:　　　　　Swift, Objective-C</br>
+✔ Back-end:　　Java, Python3</br>
+✔ Front-end:　　Next.js, React.js</br>
 
-## Professional Experience
+- Writing Swift full-time for iOS development. 
+- A good understanding of mobile framework: UIKit, Cocoa Touch, RxSwift, diffable datasource 
+- A good understanding of various mobile architectural patterns: MV*, VIPER and OOP 
+- Familiarity with CoreData or Realm for data persistence 
+- Understanding of networking and REST APIs and experience creating APIs with AWS. 
+- Experience working as a UI designer several times with other developers 
+- Familiar with Apple’s Human Interface Guidelines.  
 
-### iOS Project / Navigation app 
+## Work Experience
 
-*CICCC / Canada, Vancouver / 2021*
+### Full stack iOS developer / iOS game app
 
-- Created a navigation iOS app with collaborating other developers.  
-- Implement with REST-Api, modern Collection View, diffable data source, map kit, core location 
-- Worked as team leader, UI designer, manager.  
-- Working closely with other developers and UI designers in an agile environment.  
-- Planning to have iPhone/iPad apps in the App Store.  
-- Worked on bug fixing and improving application performance. 
-- Recorded exact details of errors during testing for further remediation. 
-- Checked on all source code to ensure usability by development staff. 
+*Self-employed / Canada, Vancouver / March 1st 2021 - current*
+
+- Created an [entertaining iOS app](https://github.com/DaiSugi01/Queens-game) with collaborating other developers.  
+- Implemented with MVVM, pattern with using reactive framework such as RxSwfit. 
+- Implemented using collection View, diffable data source, and Core Animations. 
+- Contributed with most part of the implementation including animation and reactive feature. 
+- Worked also as UI designer, collaborated closely with other developers and UI designers. 
+- Planning to have iPhone/iPad apps in the App Store. 
 - Created increased mobile adaptability for current apps in order to extend marketability. 
 
 
-### Work/ Video and Audio Engineer
+### Product manager and back-end developer / Web app
 
-*Hiroshima, Japan / Apr 2016 – Aug 2020*
+*DPCode Inc. / Canada, Vancouver / May 1st 2021 – current*
 
-- Broadcasted news by coordinating video and audio at the production control room.  
-- Directed operation and maintenance for network systems. 
-- Worked with clients to define goals and present them with optimal solutions. 
-- Set up and maintained equipment for studio recording sessions. 
-- Overcame challenges, such as faulty equipment and noise leakage, to produce great recordings. 
-- Used creative approach to coming up with the right sound quality and effects. 
+- Worked as Production Manager of open online course provider aimed at professional adults and - students. 
+- As Production Manager: 
+  - Designed fundamental system design including Next.js and AWS 
+  - Designed and conducted unit and integration tests 
+  - Coordinated tasks and schedules for all developers 
+- As Back-end developer 
+  - Designed DynamoDB schema 
+  - Create REST-API with AWS lambda including test code 
+  - Create Sign-up, Login feature with AWS Cognito 
+
+  
+### Product manager, Full stack developer / iOS Navigation app
+
+*Self-employed / Canada, Vancouver / Jan 15 2021 – Apr 11*
+
+- Created a navigation iOS app with collaborating other developers.  
+- Implement with REST-Api, modern Collection View, diffable data source, map kit, core location 
+- Contributed as team leader, UI designer, manager.  
+- Worked on bug fixing and improving application performance. 
+- Checked on all source code to ensure usability by development staff. 
 
 ## Education 
 
-### Cornerstone International Community College of Canada	
+### [Cornerstone International Community College of Canada](https://ciccc.ca/)
 
 *Vancouver, Canada / Sep 2020 – Sep 2021*
 
-- Committing iOS projects collaborating with other developers. Learning Unit-testing code considering robustness, edge cases, and usability. Learning Objective-C library shared with other platforms.
- 
-### Tokyo Metropolitan University		
+- Committing iOS projects collaborating with other developers.
+- Learning Unit-testing code considering robustness, edge cases, and usability.
+- Learning Concurrency, Memory management, RxSwift, MVVM architectures, and Objective-C.
+- Learning Unit-testing code considering robustness, edge cases, and usability.
+
+
+### [Tokyo Metropolitan University](https://www.tmu.ac.jp/english/index.html)
 
 *Tokyo, Japan / April 2010 – March 2014, April 2014 – March 2016*
-
-- Bachelor & Master of Computer and Information Sciences.  
-- Specialized in software systems and information & Data visualization. GPA 3.3/4.0
+- Master degree and Bachelor degree of Computer Sciences. 
+- Specialized in software systems and information & Data visualization. GPA 3.3/4.0 

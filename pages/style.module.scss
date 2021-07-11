@@ -1,0 +1,11 @@
+@import "@styles/common";
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 48px;
+  @include xlg {
+    grid-template-columns: auto $right-content-width;
+    column-gap: calc(#{$right-content-width}/ 5 * 2);
+  }
+}
