@@ -3,12 +3,12 @@ title: 'How to create scroll view capable with dynamic content size.'
 date: '2021-06-15'
 description: This blog explains how to create scroll view even you don't know the inside content size. The point is configure both scroll view and content's constraint with using `contentLayoutGuide`
 image: https://raw.githubusercontent.com/cookie777/images/main/blogs/2021-06-Dynamic-size-scroll-view/content-view.webp
+keyword: Swift, UIScrollView, Dynamic size, contentLayoutGuide
 ---
 
 ## Situation
 
-- In Swift,
-- You have some large content, larger than screen than you want to display like an article.
+- In Swift, you have some large content, larger than screen than you want to display like an article.
 - You don't know the size of the content height before. And It may increase later.
 - Instead of setting large enough and ambiguous size to the content before, you want to set exactly correct size so that you can avoid additional strange scroll.
 

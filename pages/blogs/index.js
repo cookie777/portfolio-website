@@ -20,7 +20,7 @@ export default function BlogsTop({ allPostsMeta }) {
 }
 
 export async function getStaticProps() {
-  const allPostsMeta = getAllPostsMetaOf(subFolder)
+  const allPostsMeta = await getAllPostsMetaOf(subFolder)
   return {
     props: {
       allPostsMeta

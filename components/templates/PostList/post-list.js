@@ -22,11 +22,10 @@ export default function PostList({ pageTitle, pageSubTitle, allPostsMeta, subFol
                 <a className={styles.post}>
                   <div>
                     <h3>{title}</h3>
-                    <p>{description}</p>
+                    <div dangerouslySetInnerHTML={{ __html: description }} />
                   </div>
                   <img
                     src={image}
-                    alt={`sample img`}
                   />
                 </a>
               </Link>

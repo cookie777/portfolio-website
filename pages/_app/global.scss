@@ -125,7 +125,6 @@ strong {
       font-size: 16px;
     }
 
-    margin-bottom: 1em;
     line-height: 150%;
     display: list-item;
     margin-left: 18px; // this must need, (default it's hidden)
@@ -133,6 +132,10 @@ strong {
   }
   li:last-of-type {
     margin-bottom: 0em;
+  }
+
+  li > ul {
+    margin-top: 0.64em;
   }
 
   em {
@@ -146,6 +149,14 @@ strong {
 
   img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
+  }
+
+  .mobile-screen-capture {
+    max-width: 240px;
+    width: 100%;
+    border: 2px solid #021a40;
+    background-color: #ff0;
+    border-radius: 6px;
   }
 }

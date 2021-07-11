@@ -40,8 +40,8 @@ export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) 
 
 export async function getStaticProps() {
   const aboutMePostData = await getSinglePostDataOf(`common`, `about-me`)
-  const workPostsMeta = getAllPostsMetaOf(`works`)
-  const blogPostsMeta = getAllPostsMetaOf(`blogs`)
+  const workPostsMeta = await getAllPostsMetaOf(`works`)
+  const blogPostsMeta = await getAllPostsMetaOf(`blogs`)
   return {
     props: {
       aboutMePostData,

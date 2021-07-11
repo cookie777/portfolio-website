@@ -12,7 +12,7 @@ export default function PostContent({ postData }) {
       <div className={`markdown`}>
         <div className={title}>
           <h1>{postData.title}</h1>
-          <p>{postData.description}</p>
+          <div dangerouslySetInnerHTML={{ __html: postData.description }} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>

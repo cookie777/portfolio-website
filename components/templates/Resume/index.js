@@ -10,12 +10,12 @@ export function Resume({ postData }) {
     <div>
       <div className={mobile}>
         <h1>{postData.title}</h1>
-        <p>{postData.description}</p>
+        <div dangerouslySetInnerHTML={{ __html: postData.description }} />
       </div>
       <div className={desktop}>
         <div className={title}>
           <h1>{postData.title}</h1>
-          <p>{postData.description}</p>
+          <div dangerouslySetInnerHTML={{ __html: postData.description }} />
         </div>
         <div className={`markdown`}>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

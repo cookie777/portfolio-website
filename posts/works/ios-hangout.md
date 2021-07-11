@@ -1,65 +1,37 @@
 ---
 title: 'iOS: Hang out Planner'
 date: '2021-01-15'
-description: 'I created an native iOS application with Swift. This apps suggests optimized root which includes locations that the user prefer. This apps uses modern collection views with diffable data source, async api-fetch with dispatch group.'
+description: 'Created a native iOS application with Swift. This app suggests optimized root which includes locations that the user prefers. This app uses modern collection views with diffable data source, async API-fetch with dispatch group.'
 image: https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/thumbnail.webp
+keyword: Swift, REST API, DispatchGroup, diffable data sources, MapKit, CoreLocation
+priority: 2
 ---
 
-## Concept
+## Motivation
 
-### Basic
+### Problem
 
-Hang-Out-Planner is an application which instantly auto-generates a daily plan.
-This apps suggests optimized root which includes locations some location fetched from yelp.
+These days, there are a lot of locations and places where we want to visit. However, it is very difficult to find out which to visit, and next to visit.
 
-### Usage flow
+This is because,
 
-The user first select some categories of locations with the order. Then the app will fetch locations surrounded by user and calculates auto suggests the best (most famous and closest) route includes locations that belong to category user has chosen. 
+1. There are too many places so that it is troublesome to find out decent ones.
+2. Even if you find out them, it is also painstaking to think about the best route. For example, which places to visit first and next so that we can go multiple places efficiently.
 
-For example, if a user choose 'Restaurant' ➔ 'Nature, Park' ➔ 'Art' in New york, the app will suggests the route 'SHAKE SHACK' ➔ 'Central Park' ➔ 'Carnegie Hall'.
+### Solution
 
-## Spec
+To solve these problems, we created is a great application, which instantly and automatically generates a plan which is a collection of navigation routes based on famous locations surrounded by your current location.
 
-- Swift: version 5.4
-- MapKit: To display route and user location
-- Core Location: To get user current location
-- REST-API: Get external location data from yelp.
-- Collection View: With diffable data source.
+<img class="mobile-screen-capture" src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/animation-summary.webp" alt="select categories"/>
 
-## Repository
-
-The latest version of this project is as follows.
-
-[Hang-Out-Planner](https://github.com/cookie777/Hang-Out-Planner/tree/yanmer-HOPplus-coreData)
-
-## Usage and Gallery
-
-1. A user selects some categories with their preferred order. 
-2. After deciding categories, list of plans are displayed to user.
-3. After selecting a plan, a user can look its details with route on map, distance, cost and so on.
-4. Of course, user can see each location's data.
-
-<div style="
-  display: inline-flex;
-  gap: 16px;
-">
-  <img src="https://user-images.githubusercontent.com/60034714/106401685-4d8c6900-63da-11eb-9f38-24f14c4ce184.gif" alt="select categories"  width="200" />
-
-  <img  src="https://user-images.githubusercontent.com/60034714/106401769-b96ed180-63da-11eb-878b-c970cc916a1d.gif"  alt="select a plan"  width="200"/>
-
-  <img src="https://user-images.githubusercontent.com/60034714/106427560-76355280-641c-11eb-80b3-87fab3348385.gif" alt="look the plan detail" width="200" />
-
-  <img   src="https://user-images.githubusercontent.com/60034714/106401877-8416b380-63db-11eb-8f2c-987cf2e1dc53.png" alt="See each location" width="200"/>
-
-</div>
 
 ## My contribution
 
 ### Team manager
 
-As a team manager, I manage whole schedule and design architecture. 
+As a team manager, I manage the whole schedule and design architecture. 
 
-I used notion for scheduling and used agile style. This makes this project to complete with just two weeks!
+I used notion for scheduling and used the agile style. This makes this project complete in just two weeks!
 
 ![Schedules](https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/manager-schedule.webp)
 ![Docs](https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/manager-docs.webp)
@@ -68,19 +40,64 @@ I used notion for scheduling and used agile style. This makes this project to co
 
 ### UI Designer
 
-As a UI Designer, I created whole UI mock using Figma. In addition to creating style guide, I create design components that are well suitable for implementing swift codes.
+As a UI Designer, I created a whole UI mock using Figma. In addition to creating a style guide, I create design components that are well suitable for implementing swift codes.
 
 ![UI mock 1](https://github.com/cookie777/images/blob/main/works/2021-01-Hang-Out-Planner/ui-mock1.webp?raw=true)
 ![UI mock 2](https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/ui-mock2.webp)
 
 ### Back-end developer
 
-As a back end developer, I design architecture and algorithm of fetching and suggesting items. I also creating tracking of user location by using core location.
+As a back-end developer, I design architecture and algorithms for fetching and suggesting items. I also creating tracking of user location by using core location. I will explain [the details later](#back-end-contribution).
 
-#### Fetching user location
+## Repository
 
-The app fetch user's location by two ways, locationManager and ip address.
-When you visit to the target screen, we set location manager to start fetching his/her location. Even a user denies it, we can assume approximate location by using ip address from api.
+The latest version of this project is as follows.
+
+[Hang-Out-Planner](https://github.com/cookie777/Hang-Out-Planner/tree/global-v2.0)
+
+## Spec
+
+- Swift: version 5.4
+- MapKit: To display route and user location
+- Core Location: To get the user current location
+- REST-API: Get external location data from yelp.
+- Collection View: With diffable data source.
+
+## Usage
+
+### Flow
+
+The user first selects some categories of locations with the order. Then the app will fetch locations surrounded by a user and calculates auto-suggests the best (most famous and closest) route includes locations that belong to the category user has chosen. 
+
+For example, if a user chooses 'Restaurant' ➔ 'Nature, Park' ➔ 'Art' in New York, the app will suggest the route 'SHAKE SHACK' ➔ 'Central Park' ➔ 'Carnegie Hall'.
+
+### How to use
+
+1. A user selects some categories with their preferred order. 
+2. After deciding categories, a list of plans is displayed to a user.
+3. After selecting a plan, a user can look at its details with routes on the map, distance, cost, and so on.
+4. Of course, users can see each location's data.
+
+<div style="
+  display: inline-flex;
+  gap: 16px;
+">
+  <img class="mobile-screen-capture" src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/animation-todo.webp" alt="todo" />
+
+  <img class="mobile-screen-capture" src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/animation-planner.webp" alt="planner" />
+
+  <img class="mobile-screen-capture"  src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/animation-location-manager.webp"  alt="location-manager" />
+</div>
+
+
+## Back end contribution
+
+Here are the details of the contribution that I did as a back-end developer.
+
+### Fetching user location
+
+The app fetches the user's location in two ways, locationManager and IP address.
+When you visit the target screen, we set the location manager to start fetching his/her location. Even a user denies it, we can assume approximate location by using an IP address from API.
 
 ![Fetching location](https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/back-end-location.webp)
 
@@ -99,11 +116,11 @@ extension LocationController {
   }
 ```
 
-#### How to suggest the routes
+### How to suggest the routes
 
 ![DispatchGroup](https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/back-end-fetching.webp)
 
-After a user decides their categories, this app asks api (yelp) to fetch related locations. It will ask serval times to get different time. These fetching are executed as **async and concurrently**. Once all fetching have complete, we proceed to next step. These processes were realized by using `DispatchGroup`.
+After a user decides their categories, this app asks API (yelp) to fetch related locations. It will ask serval times to get different times. These fetching are executed as **async and concurrently**. Once all fetching has complete, we proceed to the next step. These processes were realized by using `DispatchGroup`.
 
 ```swift
     group.enter()
@@ -130,6 +147,26 @@ After a user decides their categories, this app asks api (yelp) to fetch related
     }
 ```
 
+### Async Fetching
+
+Fetching images is expensive. Sometimes, if the internet connection is weak it costs a lot of time to get images. In this kind of situation, we didn't want the screen to stop until it fetched and displayed images. So we firstly display place holder and try fetching images asynchronously. As soon as it finished fetching, we replace images so that the user can feel no stress!
+
+<img
+  class="mobile-screen-capture"
+  src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/animation-async-fetch.webp"
+  alt="look the plan detail"
+  />
+
+
+## Future work
+
+What we're planning to do next is as follows.
+
+- Store plans as permanent data using core data or realm
+- Publish in the app store
+- Implement user account by using firebase
+
+
 ## Team member
 
 ### Tak (me :[cookie777](https://github.com/cookie777))
@@ -138,23 +175,13 @@ After a user decides their categories, this app asks api (yelp) to fetch related
 - UI Designer
 - Back end developer
 
-### Yumi (`YumiMachin`)
+### Yumi ([YumiMachin](https://github.com/YumiMachino))
 
 - Front end 
-- Back end (implement image api fetching)
+- Back end (implement image API fetching)
 
 
-### Kengo (`kengo-taka`)
+### Kengo ([kengo-taka](https://github.com/kengo-taka))
 
 - Front end
 - Created ReadMe, Docs.
-
-## Future work
-
-What we're planing to do next is as follows.
-
-- Store plans as permanent data using core data or realm
-- Publish in app store
-- Implement user account by using firebase
-
-

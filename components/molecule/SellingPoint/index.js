@@ -29,15 +29,16 @@ export default function SellingPoint() {
 
 const data = [
   {
-    title: 'Computer Science',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et mauris in fusce arcu orci ornare. Egestas at orci morbi venenatis iaculis urna nec tempus arcu.'
+    title: 'Master degree of Computer Science',
+    description: 'Have a both bachelor and master degree of computer science. Have a solid knowledge for algorithm and how computer works.'
   },
   {
-    title: 'Designer skill',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et mauris in fusce arcu orci ornare. Egestas at orci morbi venenatis iaculis urna nec tempus arcu.'
+    title: 'iOS Developer',
+    description: 'Experienced creating iOS apps. Familiar with OOP programming, design patters, and architectures'
   },
   {
-    title: 'Fast learner',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et mauris in fusce arcu orci ornare. Egestas at orci morbi venenatis iaculis urna nec tempus arcu.'
+    title: 'UI Designer skill',
+    description: 'Experience working as a UI designer several times with other developers. Familiar with Apple’s Human Interface Guidelines. '
   },
+
 ]
