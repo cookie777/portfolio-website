@@ -1,0 +1,63 @@
+@import "@styles/common";
+
+.container {
+  padding-top: 32px;
+  padding-bottom: 40px;
+  border-top: 2px $secondary-color solid;
+
+  h3 {
+    font-weight: 900;
+    margin-bottom: -0.16em;
+    font-size: 24px;
+  }
+
+  // Layout of post lists
+  .postContainer {
+    display: grid;
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 48px;
+    }
+
+    @include lg {
+      column-gap: 64px;
+    }
+
+    @include xlg {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    // Layout of single post
+    .post {
+      margin-bottom: 24px;
+
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      justify-content: space-between;
+      column-gap: 16px;
+      align-items: center;
+
+      h4 {
+        @include number-of-lines(2);
+      }
+      p {
+        font-size: 12px;
+        @include number-of-lines(2);
+      }
+
+      img {
+        width: 120px;
+        height: 120px;
+        @include md {
+          width: 96px;
+          height: 96px;
+        }
+        @include lg {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+}

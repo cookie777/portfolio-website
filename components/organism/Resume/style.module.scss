@@ -1,0 +1,10 @@
+@import "@styles/common";
+
+.title {
+  @include lg {
+    margin-top: 2em;
+  }
+  border-bottom: 1.6px solid $secondary-color;
+  padding-bottom: 1.5em;
+  margin-bottom: 2em;
+}

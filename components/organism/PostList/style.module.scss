@@ -1,0 +1,29 @@
+@import "@styles/common";
+
+// common style
+.container {
+  padding-bottom: 48px;
+
+  // Each article
+  .post {
+    margin-bottom: 24px;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    column-gap: 16px;
+    align-items: center;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+
+    h3 {
+      @include number-of-lines(2);
+    }
+    p {
+      @include number-of-lines(3);
+    }
+  }
+}

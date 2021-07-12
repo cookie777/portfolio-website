@@ -15,3 +15,10 @@
     @content;
   }
 }
+
+@mixin number-of-lines($n) {
+  display: -webkit-box;
+  -webkit-line-clamp: $n;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
