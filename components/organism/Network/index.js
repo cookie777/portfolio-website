@@ -1,9 +1,10 @@
 import SocialAccount from "../../molecule/SocialAccountIcon"
 import { container, network } from './style.module.scss'
 
-const Network = () => {
+const Network = ({ title }) => {
   return (
     <div className={container}>
+      {title}
       <div className={network}>
         {data.map((props) => {
           return (

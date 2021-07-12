@@ -1,19 +1,28 @@
 import Tail from "@components/molecule/Tail"
 import Layout from "@components/templates/Layout"
-import PostList from "@components/templates/PostList/post-list"
+import PostList from "@components/organism/PostList"
 import { getAllPostsMetaOf } from "@lib/posts"
+import LeftTitle from "@components/templates/LeftTitle"
+
 
 const subFolder = 'blogs'
 
-export default function BlogsTop({ allPostsMeta }) {
+export default function Blogs({ allPostsMeta }) {
+
+  const props = {
+    titleSet: {
+      main: "Blogs",
+      sub: "Notes."
+    },
+    contents: <PostList
+      allPostsMeta={allPostsMeta}
+      subFolder={subFolder}
+    />,
+  }
+
   return (
     <Layout>
-      <PostList
-        pageTitle={`Blog`}
-        pageSubTitle={`Notes`}
-        allPostsMeta={allPostsMeta}
-        subFolder={subFolder}
-      />
+      <LeftTitle {...props} />
       <Tail message={`${allPostsMeta.length} articles posted.`} />
     </Layout>
   )

@@ -2,21 +2,20 @@
 
 .container {
   .network {
+    @include lg {
+      margin-top: 2em;
+    }
+
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
-    // margin-top: 40px;
 
     @include md {
       grid-template-columns: repeat(2, auto);
     }
 
     @include xlg {
-      gap: 80px 80px;
-    }
-
-    img {
-      z-index: -1;
+      gap: 40px 80px;
     }
   }
 }

@@ -5,8 +5,8 @@ import { NavBarTopButton } from '@components/atom/NavbarTopButton'
 
 export default function NavigationBar() {
   return (
-    //Fix me! to make link component
     <div>
+      {/* top  */}
       <div className={styles.top}>
 
         {/* logo */}
@@ -27,7 +27,8 @@ export default function NavigationBar() {
         </div>
       </div>
 
-      {/* bottom menus */}
+
+      {/* bottom  */}
       <div className={styles.bottom}>
         {menuItems.map(({ path, menuName }) => {
           return <NavBarBottomButton path={path} menuName={menuName} key={path} />

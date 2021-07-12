@@ -1,13 +1,24 @@
-import { Resume } from "@components/templates/Resume";
+import { Resume } from "@components/organism/Resume";
 import { getSinglePostDataOf } from "@lib/posts";
 import Layout from "@components/templates/Layout";
 import Tail from "@components/molecule/Tail";
+import LeftTitle from "@components/templates/LeftTitle";
 
 export default function About({ postData }) {
+
+  const props = {
+    titleSet: {
+      main: "About",
+      sub: "Me."
+    },
+    contents: <Resume {...postData} />,
+  }
+
+
   return (
     <Layout>
-      <Resume postData={postData} />
-      <Tail message={`About me`} />
+      <LeftTitle {...props} />
+      <Tail message={`Resume`} />
     </Layout>
   )
 }
