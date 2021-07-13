@@ -28,6 +28,9 @@ body {
 }
 
 img {
+  z-index: -1;
+  object-fit: cover;
+  display: block;
   max-width: 100%;
 }
 
@@ -74,12 +77,12 @@ h3 {
 }
 
 h4 {
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 0.64em;
   font-size: 13px;
   line-height: 164%;
   @include lg {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 // Set top margin except after h1-h4. Because h1-h4 has margin-bottom
@@ -100,6 +103,11 @@ p {
 
 strong {
   font-weight: 600;
+}
+
+em {
+  font-size: 0.8em;
+  color: $secondary-sub2-color;
 }
 
 // These styles are only adapted for single post page generated from .md
@@ -134,13 +142,9 @@ strong {
     margin-bottom: 0em;
   }
 
+  // nested list
   li > ul {
     margin-top: 0.64em;
-  }
-
-  em {
-    font-size: 0.9em;
-    color: $secondary-sub2-color;
   }
 
   a {
@@ -148,7 +152,6 @@ strong {
   }
 
   img {
-    display: block;
     margin: 0 auto 1em auto;
   }
 

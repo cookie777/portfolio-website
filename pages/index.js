@@ -2,30 +2,34 @@ import { getAllPostsMetaOf, getSinglePostDataOf } from '@lib/posts'
 
 import styles from './style.module.scss'
 import SellingPoint from '@components/molecule/SellingPoint'
-import PostList from '@components/templates/PostList/post-list'
+import PostListHome from '@components/organism/PostListHome'
 import Layout from '@components/templates/Layout'
-import { Resume } from '@components/templates/Resume'
 import Network from '@components/organism/Network'
-import Message from '@components/organism/Message'
+import { ResumeHome } from '@components/organism/ResumeHome'
 
 
 export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) {
+
+  const Test = () => { (<h2> test</h2>) }
+
   return (
     <Layout>
       <div className={styles.grid}>
         <div>
           <SellingPoint />
-          <Resume postData={aboutMePostData} />
-          <Network />
+          <ResumeHome {...aboutMePostData} />
+          <Network
+            title={<h2>Contact</h2>}
+          />
         </div>
         <div>
-          <PostList
+          <PostListHome
             pageTitle={`Works`}
             pageSubTitle={`Experiences`}
             allPostsMeta={workPostsMeta}
             subFolder={`works`}
           />
-          <PostList
+          <PostListHome
             pageTitle={`Blog posts`}
             pageSubTitle={`Notes`}
             allPostsMeta={blogPostsMeta}
