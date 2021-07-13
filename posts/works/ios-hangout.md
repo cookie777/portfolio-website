@@ -120,7 +120,7 @@ extension LocationController {
 
 ![DispatchGroup](https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/back-end-fetching.webp)
 
-After a user decides their categories, this app asks API (yelp) to fetch related locations. It will ask serval times to get different times. These fetching are executed as **async and concurrently**. Once all fetching has complete, we proceed to the next step. These processes were realized by using `DispatchGroup`.
+After a user decides their categories, this app asks API (yelp) to fetch related locations. It will ask serval times to get different times. These fetching are executed as **async and concurrently**. Once all fetching has complete, we proceed to the next step. These processes were implemented by using `DispatchGroup`.
 
 ```swift
     group.enter()

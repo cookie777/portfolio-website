@@ -28,7 +28,7 @@ Finally, each person reveals their index (number), and those who are targeted ha
 
 ### Introducing into App
 
-To realize this, we created a game app, which we replace "King" with "Queen" instead. This is because to make this game unique, and there is already a game called "King's cup" in western culture which might cause misunderstanding.
+Tp apply this, we created a game app, which we replace "King" with "Queen" instead. This is because to make this game unique, and there is already a game called "King's cup" in western culture which might cause misunderstanding.
 
 In the app, we randomly select the queen and others(citizens), the same as King's game. What is more, by using the advantage of the application platform, we can also prepare template collections of commands. When a queen chooses the command, targets are randomly selected.
 
@@ -63,7 +63,7 @@ In this work, what I contributed is as follows.
 
 - Swift: version 5.4
 - iOS: 14.5
-- RxSwift, RxCocoa: To realize reactive functions involving UI interaction.
+- RxSwift, RxCocoa: To implement reactive functions involving UI interaction.
 - Realm: To save game data persistently.
 - Collection View, diffable data source: To display flexible and beautiful UI connected to data.
 
@@ -143,7 +143,7 @@ We also prepared and introduce both light and dark modes to suffice users' deman
 <img class="mobile-screen-capture" src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-06-Queens-Game/animatino-lightmode.webp" alt="dark and light mode" />
 
 
-This feature was realized by using `traitCollection` and `userInterfaceStyle`. We implemented a static custom color wrapped by `struct`.
+This feature was implemented by using `traitCollection` and `userInterfaceStyle`. We implemented a static custom color wrapped by `struct`.
 
 ```swift
 /// Custom color set used for this project.
@@ -347,7 +347,7 @@ Each second, we send `onNext` and bind to UILabel. After finishing the countdown
 ### Todo feature
 
 
-This game contains initial template command so that users only have to select them. Of course,  a user can add new commands or edit them later. This is a sort of Todo list feature. We realize it by using a `UICollectionView` with difffable datasource, which elegantly displays the differences of items. In addition, Realm was used to keep items as persistence data.
+This game contains initial template command so that users only have to select them. Of course,  a user can add new commands or edit them later. This is a sort of Todo list feature. We utilized it by using a `UICollectionView` with difffable datasource, which elegantly displays the differences of items. In addition, Realm was used to keep items as persistence data.
 
 Furthermore, we added a searching(filtering) feature, which leads the user to comfortably find their item.
 
