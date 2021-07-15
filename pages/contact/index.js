@@ -5,6 +5,8 @@ import Network from "../../components/organism/Network";
 
 
 export default function Contact() {
+  const headProps = { title: "Contact" }
+
   const props = {
     titleSet: {
       main: "Contact",
@@ -14,7 +16,7 @@ export default function Contact() {
   }
 
   return (
-    <Layout>
+    <Layout {...headProps}>
       <LeftTitle {...props} />
       <Tail message={`Feel free to chat!`} />
     </Layout>
