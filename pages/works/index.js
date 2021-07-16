@@ -9,6 +9,7 @@ const subFolder = 'works'
 
 export default function WorksTop({ allPostsMeta }) {
 
+  const headProps = { title: "Works" }
   const props = {
     titleSet: {
       main: "Works",
@@ -21,7 +22,7 @@ export default function WorksTop({ allPostsMeta }) {
   }
 
   return (
-    <Layout>
+    <Layout {...headProps}>
       <LeftTitle {...props} />
       <Tail message={`${allPostsMeta.length} articles posted.`} />
     </Layout>

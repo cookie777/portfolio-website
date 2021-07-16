@@ -16,7 +16,7 @@ Of course this can be solve by using tableView or collectionView. However, those
 
 ## Short answer
 
-I found a way to realize this. The solution is
+I found a way to implement this. The solution is
 
 - Set both scrollView and its content's constraint.
 - Set the content area of scrollView with `contentLayoutGuide`.
@@ -182,6 +182,6 @@ var scrollView = DynamicHeightScrollView(
 
 ## Conclusion
 
-When content view inside the scroll view is very large, or you're not sure how large it'll be, setting content constraint by using  `contentLayoutGuide` will easily realize the scrolling!
+When content view inside the scroll view is very large, or you're not sure how large it'll be, setting content constraint by using  `contentLayoutGuide` will easily make the scrolling better!
 
 You can look further from this [sample project](https://github.com/cookie777/SwiftTips/tree/main/DynamicSizeScrollView/DynamicSizeScrollView).

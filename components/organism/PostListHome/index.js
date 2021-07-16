@@ -11,12 +11,12 @@ export default function PostListHome({ pageTitle, pageSubTitle, allPostsMeta, su
       </div>
       <div className={postContainer}>
         {
-          allPostsMeta.map(({ id, title, description, image }) => (
+          allPostsMeta.map(({ id, title, descriptionHtml, image }) => (
             <Link href={`/${subFolder}/${id}`} key={id}>
               <a className={post}>
                 <div>
                   <h4>{title}</h4>
-                  <div dangerouslySetInnerHTML={{ __html: description }} />
+                  <div dangerouslySetInnerHTML={{ __html: descriptionHtml }} />
                 </div>
                 <img
                   src={image}

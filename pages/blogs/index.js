@@ -9,6 +9,7 @@ const subFolder = 'blogs'
 
 export default function Blogs({ allPostsMeta }) {
 
+  const headProps = { title: "Blogs" }
   const props = {
     titleSet: {
       main: "Blogs",
@@ -21,7 +22,7 @@ export default function Blogs({ allPostsMeta }) {
   }
 
   return (
-    <Layout>
+    <Layout {...headProps}>
       <LeftTitle {...props} />
       <Tail message={`${allPostsMeta.length} articles posted.`} />
     </Layout>

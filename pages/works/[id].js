@@ -6,8 +6,15 @@ import Tail from '@components/molecule/Tail'
 const subFolder = 'works'
 
 export default function Works({ postData }) {
+
+  const headProps = {
+    title: postData.title,
+    description: postData.description,
+    image: postData.image
+  }
+
   return (
-    <Layout>
+    <Layout {...headProps}>
       <PostContent postData={postData} />
       <Tail message={`Works`} />
     </Layout>

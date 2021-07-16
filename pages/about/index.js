@@ -6,6 +6,7 @@ import LeftTitle from "@components/templates/LeftTitle";
 
 export default function About({ postData }) {
 
+  const headProps = { title: "About" }
   const props = {
     titleSet: {
       main: "About",
@@ -16,7 +17,7 @@ export default function About({ postData }) {
 
 
   return (
-    <Layout>
+    <Layout {...headProps}>
       <LeftTitle {...props} />
       <Tail message={`Resume`} />
     </Layout>
