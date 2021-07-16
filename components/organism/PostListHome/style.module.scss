@@ -28,7 +28,7 @@
       grid-template-columns: repeat(1, 1fr);
     }
 
-    // Layout of single post
+    // Layout of each post
     .post {
       margin-bottom: 24px;
 
@@ -42,7 +42,7 @@
         @include number-of-lines(2);
       }
       p {
-        font-size: 12px;
+        font-size: 13px;
         @include number-of-lines(2);
       }
 

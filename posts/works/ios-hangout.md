@@ -4,7 +4,7 @@ date: '2021-01-15'
 description: 'Created a native iOS application with Swift. This app suggests optimized root which includes locations that the user prefers. This app uses modern collection views with diffable data source, async API-fetch with dispatch group.'
 image: https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/thumbnail.webp
 keyword: Swift, REST API, DispatchGroup, diffable data sources, MapKit, CoreLocation
-priority: 2
+priority: 998
 ---
 
 ## Motivation

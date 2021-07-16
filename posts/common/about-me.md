@@ -38,17 +38,19 @@ description: iOS mobile developer with extensive experience in designing, progra
 
 *DPCode Inc. / Canada, Vancouver / May 1st 2021 – current*
 
-- Worked as Production Manager of open online course provider aimed at professional adults and - students. 
-- As Production Manager: 
-  - Designed fundamental system design including Next.js and AWS 
-  - Designed and conducted unit and integration tests 
-  - Coordinated tasks and schedules for all developers 
-- As Back-end developer 
-  - Designed DynamoDB schema 
-  - Create REST-API with AWS lambda including test code 
-  - Create Sign-up, Login feature with AWS Cognito 
+- Worked as Production Manager of open online course provider aimed at professional adults and - students.
 
+- As Production Manager:
+  - Designed fundamental system design including Next.js and AWS
+  - Designed and conducted unit and integration tests
+  - Coordinated tasks and schedules for all developers
   
+- As Back-end developer
+  - Designed DynamoDB schema
+  - Create REST-API with AWS lambda including test code
+  - Create Sign-up, Login feature with AWS Cognito
+
+
 ### Product manager, Full stack developer / iOS Navigation app
 
 *Self-employed / Canada, Vancouver / Jan 15 2021 – Apr 11*

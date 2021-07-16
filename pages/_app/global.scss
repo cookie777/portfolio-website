@@ -3,7 +3,7 @@
 // Code syntax
 @import "@styles/prism-okaidia";
 // Google Fonts
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -36,10 +36,11 @@ img {
 
 // basic font setting
 h1 {
-  margin-bottom: 1em; // Basically, set same margin bottom to font size
+  margin-bottom: 0.4em; // Basically, set same margin bottom to font size
   font-weight: 900;
   font-size: 36px;
   line-height: 116%;
+  letter-spacing: 0.01em;
   @include lg {
     font-size: 48px;
   }
@@ -47,47 +48,72 @@ h1 {
 
 h2 {
   font-weight: 800;
-  margin-bottom: 0.84em;
+  margin-top: 1.64em;
+  margin-bottom: 0.56em;
   font-size: 20px;
   line-height: 124%;
+  letter-spacing: 0.01em;
   @include lg {
     font-size: 28px;
   }
 }
+
+h1 + h2 {
+  margin-top: 0em;
+}
+
 /*
-  Set top margin except after h1-h4. Because h1-h4 has margin-bottom.
-  Of course margin will vanished but it's considering when wrapped by div
+  first tag in div, we don't set to margin.
+  This is to avoid duplicate margin when it's wrapped by div
+  <h1>
+  <div>
+    <h2> -> no need top margin
+    <h2> -> need to margin
+  </div>
 */
-*:not(h1, h2, h3, h4) + h2 {
-  margin-top: 1.84em;
+div > h2:first-of-type {
+  margin-top: 0em;
 }
 
 h3 {
   font-weight: 800;
+  margin-top: 1.64em;
   margin-bottom: 0.64em;
   font-size: 16px;
   line-height: 132%;
+  letter-spacing: 0.03em;
   @include lg {
     font-size: 18px;
   }
 }
-// Set top margin except after h1-h4. Because h1-h4 has margin-bottom
-*:not(h1, h2, h3, h4) + h3 {
-  margin-top: 1.64em;
+div > h3:first-of-type {
+  margin-top: 0em;
+}
+
+h1 + h3,
+h2 + h3 {
+  margin-top: 0em;
 }
 
 h4 {
-  font-weight: 600;
+  font-weight: 700;
+  margin-top: 1.64em;
   margin-bottom: 0.64em;
   font-size: 13px;
   line-height: 164%;
+  letter-spacing: 0.04em;
   @include lg {
     font-size: 14px;
   }
 }
-// Set top margin except after h1-h4. Because h1-h4 has margin-bottom
-*:not(h1, h2, h3, h4) + h4 {
-  margin-top: 1.64em;
+div > h4:first-of-type {
+  margin-top: 0em;
+}
+
+h1 + h4,
+h2 + h4,
+h3 + h4 {
+  margin-top: 0em;
 }
 
 p {
@@ -98,7 +124,7 @@ p {
   @include md {
     font-size: 16px;
   }
-  letter-spacing: 1.24px;
+  letter-spacing: 0.04em;
 }
 
 strong {
@@ -107,33 +133,39 @@ strong {
 
 em {
   font-size: 0.8em;
-  color: $secondary-sub2-color;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: $secondary-sub1-color;
 }
 
 // These styles are only adapted for single post page generated from .md
 .markdown {
+  // sub info under title.
+  h3 + p > em {
+    display: block;
+    margin-top: -0.8em;
+  }
   ul {
     list-style: disc outside none;
     padding-bottom: 4px;
-    margin-bottom: 1em;
+    margin-top: 0em;
+    margin-bottom: 0.16em;
   }
 
   ol {
     list-style: decimal outside none;
     padding-bottom: 4px;
-    margin-bottom: 1em;
   }
 
   li {
     font-weight: 400;
     font-size: 13px;
-    margin-bottom: 0.64em;
+    margin-bottom: 0.16em;
     line-height: 164%;
+    letter-spacing: 0.04em;
     @include md {
       font-size: 16px;
     }
-
-    line-height: 150%;
     display: list-item;
     margin-left: 18px; // this must need, (default it's hidden)
     padding-inline-start: 0px; // space between marker and item ・'-----'item
@@ -144,7 +176,7 @@ em {
 
   // nested list
   li > ul {
-    margin-top: 0.64em;
+    margin-top: 0.16em;
   }
 
   a {
