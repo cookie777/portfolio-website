@@ -1,21 +1,20 @@
 @import "@styles/common";
 
 .container {
+  margin-top: 2em;
   .network {
-    @include lg {
-      margin-top: 2em;
-    }
-
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
-
     @include md {
       grid-template-columns: repeat(2, auto);
     }
-
+    gap: 40px;
     @include xlg {
       gap: 40px 80px;
+    }
+
+    @include lg {
+      margin-top: 2em;
     }
   }
 }

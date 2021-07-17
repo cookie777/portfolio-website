@@ -34,9 +34,28 @@ img {
   max-width: 100%;
 }
 
-// basic font setting
+/*
+  first tag in div, we don't set to margin.
+  This is to avoid duplicate margin when it's wrapped by div
+  <h1>
+  <div> -> top margin for h1
+    <h2> -> no need top margin
+    <h2> -> need to margin
+  </div>
+*/
+
+h1 + div,
+h2 + div,
+h3 + div,
+h4 + div,
+ol + div,
+ul + div,
+p + div {
+  margin-top: 1em;
+}
+
 h1 {
-  margin-bottom: 0.4em; // Basically, set same margin bottom to font size
+  margin-top: 0.4em;
   font-weight: 900;
   font-size: 36px;
   line-height: 116%;
@@ -45,40 +64,27 @@ h1 {
     font-size: 48px;
   }
 }
+div > h1:first-child {
+  margin-top: 0em;
+}
 
 h2 {
   font-weight: 800;
-  margin-top: 1.64em;
-  margin-bottom: 0.56em;
+  margin-top: 1.28em;
   font-size: 20px;
-  line-height: 124%;
+  line-height: 108%;
   letter-spacing: 0.01em;
   @include lg {
     font-size: 28px;
   }
 }
-
-h1 + h2 {
-  margin-top: 0em;
-}
-
-/*
-  first tag in div, we don't set to margin.
-  This is to avoid duplicate margin when it's wrapped by div
-  <h1>
-  <div>
-    <h2> -> no need top margin
-    <h2> -> need to margin
-  </div>
-*/
-div > h2:first-of-type {
+div > h2:first-child {
   margin-top: 0em;
 }
 
 h3 {
   font-weight: 800;
-  margin-top: 1.64em;
-  margin-bottom: 0.64em;
+  margin-top: 0.96em;
   font-size: 16px;
   line-height: 132%;
   letter-spacing: 0.03em;
@@ -86,19 +92,18 @@ h3 {
     font-size: 18px;
   }
 }
-div > h3:first-of-type {
-  margin-top: 0em;
+ul + h3,
+ol + h3,
+p + h3 {
+  margin-top: 1.2em;
 }
-
-h1 + h3,
-h2 + h3 {
+div > h3:first-child {
   margin-top: 0em;
 }
 
 h4 {
   font-weight: 700;
   margin-top: 1.64em;
-  margin-bottom: 0.64em;
   font-size: 13px;
   line-height: 164%;
   letter-spacing: 0.04em;
@@ -106,25 +111,22 @@ h4 {
     font-size: 14px;
   }
 }
-div > h4:first-of-type {
-  margin-top: 0em;
-}
-
-h1 + h4,
-h2 + h4,
-h3 + h4 {
+div > h4:first-child {
   margin-top: 0em;
 }
 
 p {
+  margin-top: 0.56em;
   font-weight: 400;
   font-size: 13px;
-  margin-bottom: 0.64em;
   line-height: 164%;
   @include md {
     font-size: 16px;
   }
   letter-spacing: 0.04em;
+}
+div > p:first-child {
+  margin-top: 0em;
 }
 
 strong {
@@ -143,40 +145,44 @@ em {
   // sub info under title.
   h3 + p > em {
     display: block;
-    margin-top: -0.8em;
-  }
-  ul {
-    list-style: disc outside none;
-    padding-bottom: 4px;
-    margin-top: 0em;
-    margin-bottom: 0.16em;
+    margin-top: -0.64em;
   }
 
+  ul {
+    list-style: disc outside none;
+    margin-top: 0.56em;
+  }
   ol {
     list-style: decimal outside none;
-    padding-bottom: 4px;
+    margin-top: 0.56em;
+  }
+
+  // nested ul (ol)
+  li > ul:first-of-type,
+  li > ol:first-of-type {
+    margin-top: 0em;
   }
 
   li {
     font-weight: 400;
     font-size: 13px;
-    margin-bottom: 0.16em;
-    line-height: 164%;
-    letter-spacing: 0.04em;
     @include md {
       font-size: 16px;
     }
+    margin-top: 0.56em;
+    line-height: 164%;
+    letter-spacing: 0.04em;
     display: list-item;
     margin-left: 18px; // this must need, (default it's hidden)
     padding-inline-start: 0px; // space between marker and item ・'-----'item
   }
-  li:last-of-type {
-    margin-bottom: 0em;
+  // adjacent li
+  li + li {
+    margin-top: 0em;
   }
-
-  // nested list
-  li > ul {
-    margin-top: 0.16em;
+  // first li in ul
+  ul > li:first-of-type {
+    margin-top: 0em;
   }
 
   a {
