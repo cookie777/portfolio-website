@@ -9,9 +9,10 @@ keyword: Swift, Realm, RxSwift, MVVM, CoreAnimation, UICollectionView, diffable 
 priority: 999
 ---
 
+## Motivation
+
 <img class="mobile-screen-capture" src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-06-Queens-Game/animation-whole-game.webp" alt="Game summary"/>
 
-## Motivation
 
 ### Backgorund
 
