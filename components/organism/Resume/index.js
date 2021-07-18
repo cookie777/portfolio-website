@@ -5,7 +5,7 @@ export function Resume(postData) {
     <div className={`markdown`}>
       <div className={title}>
         <h2>Summary</h2>
-        <div dangerouslySetInnerHTML={{ __html: postData.description }} />
+        <div dangerouslySetInnerHTML={{ __html: postData.descriptionHtml }} />
       </div>
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </div>

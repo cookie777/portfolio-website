@@ -22,21 +22,9 @@
 
   // title
   .title {
-    margin-bottom: 1em;
-
     h1 {
       font-size: 32px;
-      margin-bottom: 0;
     }
-    h3 {
-      font-size: 16px;
-
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-    }
-
     @include lg {
       h1 {
         font-size: 40px;
@@ -48,16 +36,9 @@
       }
     }
 
-    // @include md {
-    //   // only direct and first div.
-    //   > h3:first-of-type {
-    //     position: fixed;
-    //     top: 48%;
-    //   }
-    // }
-
-    // border-bottom: 1.6px solid $secondary-color;
-    // padding-bottom: 1.5em;
-    // margin-bottom: 2em;
+    h3 {
+      font-size: 16px;
+      margin-top: 0.08em;
+    }
   }
 }

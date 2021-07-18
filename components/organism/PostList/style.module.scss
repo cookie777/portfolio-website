@@ -2,11 +2,9 @@
 
 // common style
 .container {
-  padding-bottom: 48px;
-
   // Each article
   .post {
-    margin-bottom: 24px;
+    margin-top: 24px;
 
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -18,12 +16,19 @@
       width: 200px;
       height: 200px;
     }
+    em {
+      font-size: 15px;
+    }
 
     h3 {
+      margin-top: 0.24em;
       @include number-of-lines(2);
     }
     p {
       @include number-of-lines(3);
     }
+  }
+  .post:first-of-type {
+    margin-top: 0;
   }
 }

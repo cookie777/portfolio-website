@@ -1,9 +1,9 @@
 @import "@styles/common";
 @import "@styles/reset";
 // Code syntax
-@import "@styles/prism-okaidia";
+@import "@styles/prism";
 // Google Fonts
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -12,6 +12,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: $font-family;
+  color: $secondary-color;
   line-height: 150%;
   padding-top: calc(92px + 40px); // space for top nav bar
   padding-bottom: 128px; // space for bottom nav bar
@@ -34,71 +35,106 @@ img {
   max-width: 100%;
 }
 
-// basic font setting
+/*
+  Concept: top margin base.
+
+  - However, the first element in div, we don't set top margin.
+  - Instead, we set top margin for div. This is caring wrapper.
+  <h1>
+  <div> -> top margin for h1
+    <h2> -> no need top margin
+    <h2> -> need to margin
+  </div>
+*/
+
+h1 + div,
+h2 + div,
+h3 + div,
+h4 + div,
+ol + div,
+ul + div,
+p + div {
+  margin-top: 1em;
+}
+
 h1 {
-  margin-bottom: 1em; // Basically, set same margin bottom to font size
+  margin-top: 0.4em;
   font-weight: 900;
   font-size: 36px;
   line-height: 116%;
+  letter-spacing: 0.01em;
   @include lg {
     font-size: 48px;
   }
 }
+div > h1:first-child {
+  margin-top: 0em;
+}
 
 h2 {
   font-weight: 800;
-  margin-bottom: 0.84em;
+  margin-top: 1.28em;
   font-size: 20px;
-  line-height: 124%;
+  line-height: 108%;
+  letter-spacing: 0.01em;
   @include lg {
     font-size: 28px;
   }
 }
-/*
-  Set top margin except after h1-h4. Because h1-h4 has margin-bottom.
-  Of course margin will vanished but it's considering when wrapped by div
-*/
-*:not(h1, h2, h3, h4) + h2 {
-  margin-top: 1.84em;
+div > h2:first-child {
+  margin-top: 0em;
 }
 
 h3 {
   font-weight: 800;
-  margin-bottom: 0.64em;
+  margin-top: 1.2em;
   font-size: 16px;
   line-height: 132%;
+  letter-spacing: 0.03em;
   @include lg {
     font-size: 18px;
   }
 }
-// Set top margin except after h1-h4. Because h1-h4 has margin-bottom
-*:not(h1, h2, h3, h4) + h3 {
-  margin-top: 1.64em;
+h1 + h3,
+h2 + h3 {
+  margin-top: 0.8em;
+}
+ul + h3,
+ol + h3,
+p + h3 {
+  margin-top: 1.2em;
+}
+div > h3:first-child {
+  margin-top: 0em;
 }
 
 h4 {
-  font-weight: 600;
-  margin-bottom: 0.64em;
+  font-weight: 700;
+  margin-top: 0.96em;
   font-size: 13px;
   line-height: 164%;
+  letter-spacing: 0.04em;
   @include lg {
     font-size: 14px;
   }
 }
-// Set top margin except after h1-h4. Because h1-h4 has margin-bottom
-*:not(h1, h2, h3, h4) + h4 {
-  margin-top: 1.64em;
+div > h4:first-child {
+  margin-top: 0em;
 }
 
 p {
+  margin-top: 0.56em;
+  color: rgb(66, 71, 75);
   font-weight: 400;
   font-size: 13px;
-  margin-bottom: 0.64em;
   line-height: 164%;
   @include md {
     font-size: 16px;
   }
-  letter-spacing: 1.24px;
+  letter-spacing: 0.04em;
+}
+div > p:first-child {
+  margin-top: 0em;
 }
 
 strong {
@@ -107,44 +143,57 @@ strong {
 
 em {
   font-size: 0.8em;
-  color: $secondary-sub2-color;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: $secondary-sub1-color;
 }
 
 // These styles are only adapted for single post page generated from .md
 .markdown {
-  ul {
-    list-style: disc outside none;
-    padding-bottom: 4px;
-    margin-bottom: 1em;
+  overflow: auto;
+
+  // sub info under title.
+  h3 + p > em {
+    display: block;
+    margin-top: -0.64em;
   }
 
+  ul {
+    list-style: disc outside none;
+    margin-top: 0.56em;
+  }
   ol {
     list-style: decimal outside none;
-    padding-bottom: 4px;
-    margin-bottom: 1em;
+    margin-top: 0.56em;
+  }
+
+  // nested ul (ol)
+  li > ul:first-of-type,
+  li > ol:first-of-type {
+    margin-top: 0em;
   }
 
   li {
     font-weight: 400;
     font-size: 13px;
-    margin-bottom: 0.64em;
-    line-height: 164%;
+    color: $text-p-color;
     @include md {
       font-size: 16px;
     }
-
-    line-height: 150%;
+    margin-top: 0.56em;
+    line-height: 174%;
+    letter-spacing: 0.04em;
     display: list-item;
     margin-left: 18px; // this must need, (default it's hidden)
     padding-inline-start: 0px; // space between marker and item ・'-----'item
   }
-  li:last-of-type {
-    margin-bottom: 0em;
+  // adjacent li
+  li + li {
+    margin-top: 0em;
   }
-
-  // nested list
-  li > ul {
-    margin-top: 0.64em;
+  // first li in ul
+  ul > li:first-of-type {
+    margin-top: 0em;
   }
 
   a {
@@ -152,14 +201,28 @@ em {
   }
 
   img {
-    margin: 0 auto 1em auto;
+    margin: 1em auto 0 auto;
   }
 
   .mobile-screen-capture {
     max-width: 240px;
     width: 100%;
     border: 2px solid #021a40;
-    background-color: #ff0;
     border-radius: 6px;
   }
 }
+
+.remark-highlight {
+  margin-bottom: 1em;
+
+  @include prism();
+
+  @include md {
+    code[class*="language-"],
+    pre[class*="language-"] {
+      font-size: 16px;
+    }
+  }
+}
+
+@include prism-inline();

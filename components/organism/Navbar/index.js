@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './style.module.scss'
 import { NavBarBottomButton } from '@components/atom/NavBarBottomButton'
 import { NavBarTopButton } from '@components/atom/NavbarTopButton'
@@ -8,11 +9,12 @@ export default function NavigationBar() {
     <div>
       {/* top  */}
       <div className={styles.top}>
-
-        {/* logo */}
         <div className={styles.logo}>
           <Link href={`/`}>
-            tak8
+            <a>
+              <Image src="/logo.svg" alt="logo" width="32" height="32" />
+              <span>tak8</span>
+            </a>
           </Link>
         </div>
 

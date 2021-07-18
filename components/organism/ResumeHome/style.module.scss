@@ -1,15 +1,9 @@
 @import "@styles/common";
 
 .container {
-  h1 {
-    margin-bottom: 0.64em;
-  }
-  .title {
-    margin-bottom: 2em;
-  }
-
   // for desktop only
   .desktop {
+    margin-top: 2em;
     display: none;
   }
   @include xlg {
