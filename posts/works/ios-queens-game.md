@@ -1,5 +1,5 @@
 ---
-title: 'iOS app: Queen''s game'
+title: 'iOS App: Queen''s game'
 date: '2021-07-15'
 description: 'We created an iOS game application with Swift. This app provides a multi-payer game to play between your friends and neighbors. Since this game includes great random factors and customization, each time a player will be provided with variable joys. </br>
 

@@ -1,7 +1,7 @@
 @import "@styles/common";
 @import "@styles/reset";
 // Code syntax
-@import "@styles/prism-okaidia";
+@import "@styles/prism";
 // Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
@@ -12,6 +12,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: $font-family;
+  color: $secondary-color;
   line-height: 150%;
   padding-top: calc(92px + 40px); // space for top nav bar
   padding-bottom: 128px; // space for bottom nav bar
@@ -35,8 +36,10 @@ img {
 }
 
 /*
-  first tag in div, we don't set to margin.
-  This is to avoid duplicate margin when it's wrapped by div
+  Concept: top margin base.
+
+  - However, the first element in div, we don't set top margin.
+  - Instead, we set top margin for div. This is caring wrapper.
   <h1>
   <div> -> top margin for h1
     <h2> -> no need top margin
@@ -84,13 +87,17 @@ div > h2:first-child {
 
 h3 {
   font-weight: 800;
-  margin-top: 0.96em;
+  margin-top: 1.2em;
   font-size: 16px;
   line-height: 132%;
   letter-spacing: 0.03em;
   @include lg {
     font-size: 18px;
   }
+}
+h1 + h3,
+h2 + h3 {
+  margin-top: 0.8em;
 }
 ul + h3,
 ol + h3,
@@ -103,7 +110,7 @@ div > h3:first-child {
 
 h4 {
   font-weight: 700;
-  margin-top: 1.64em;
+  margin-top: 0.96em;
   font-size: 13px;
   line-height: 164%;
   letter-spacing: 0.04em;
@@ -117,6 +124,7 @@ div > h4:first-child {
 
 p {
   margin-top: 0.56em;
+  color: rgb(66, 71, 75);
   font-weight: 400;
   font-size: 13px;
   line-height: 164%;
@@ -168,11 +176,12 @@ em {
   li {
     font-weight: 400;
     font-size: 13px;
+    color: $text-p-color;
     @include md {
       font-size: 16px;
     }
     margin-top: 0.56em;
-    line-height: 164%;
+    line-height: 174%;
     letter-spacing: 0.04em;
     display: list-item;
     margin-left: 18px; // this must need, (default it's hidden)
@@ -199,7 +208,6 @@ em {
     max-width: 240px;
     width: 100%;
     border: 2px solid #021a40;
-    background-color: #ff0;
     border-radius: 6px;
   }
 }

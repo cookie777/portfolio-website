@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { container, title, postContainer, post } from "./style.module.scss"
+import { container, title, postContainer, post, moreLink } from "./style.module.scss"
 
 export default function PostListHome({ pageTitle, pageSubTitle, allPostsMeta, subFolder }) {
+
+  const maxPosts = 3
 
   return (
     <div className={container}>
@@ -11,7 +13,7 @@ export default function PostListHome({ pageTitle, pageSubTitle, allPostsMeta, su
       </div>
       <div className={postContainer}>
         {
-          allPostsMeta.map(({ id, title, descriptionHtml, image }) => (
+          allPostsMeta.slice(0, maxPosts).map(({ id, title, descriptionHtml, image }) => (
             <Link href={`/${subFolder}/${id}`} key={id}>
               <a className={post}>
                 <div>
@@ -27,6 +29,11 @@ export default function PostListHome({ pageTitle, pageSubTitle, allPostsMeta, su
           ))
         }
       </div>
+      {/* <Link href={`/${subFolder}`}>
+        <a className={moreLink}>
+          <h4>more ></h4>
+        </a>
+      </Link> */}
     </div>
   )
 }
