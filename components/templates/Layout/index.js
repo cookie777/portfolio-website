@@ -1,9 +1,11 @@
 import NavigationBar from "@components/organism/Navbar";
+import fetchCurrentDomain from "@lib/fetchDomain";
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 export default function Layout({ children, title, description, image }) {
-  // console.log(title, description, image)
+
+  const url = fetchCurrentDomain()
 
   const defaultTitle = `tak8`
   const metaTitle = title ? `${title} | ${defaultTitle}` : defaultTitle
@@ -11,11 +13,11 @@ export default function Layout({ children, title, description, image }) {
   const defaultDescription = `'tak8' is a portfolio website includes blogs and works articles.`
   const metaDescription = description ? description : defaultDescription
 
-  const defaultImage = `${process.env.VERCEL_URL}/site-thumbnail.svg`
+  const defaultImage = `${url}/site-thumbnail.svg`
   const metaImage = image ? image : defaultImage
 
   const router = useRouter()
-  const metaURL = `${process.env.VERCEL_URL}${router.asPath}`
+  const metaURL = `${url}${router.asPath}`
 
   return (
     <>
