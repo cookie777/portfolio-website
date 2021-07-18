@@ -10,8 +10,6 @@ import { ResumeHome } from '@components/organism/ResumeHome'
 
 export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) {
 
-  const Test = () => { (<h2> test</h2>) }
-
   return (
     <Layout>
       <div className={styles.grid}>

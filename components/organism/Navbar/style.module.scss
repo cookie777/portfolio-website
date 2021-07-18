@@ -30,9 +30,17 @@
   display: flex;
   justify-content: space-between;
 
-  .logo a {
-    font-weight: 900;
-    font-size: 24px;
+  .logo {
+    a {
+      display: flex;
+      align-items: flex-end;
+      column-gap: 16px;
+      font-weight: 900;
+      font-size: 24px;
+    }
+    img {
+      object-fit: contain;
+    }
   }
 
   .menu {
