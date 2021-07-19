@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { container, title, postContainer, post, moreLink } from "./style.module.scss"
+import MoreLink from '@components/atom/MoreLink';
+import { container, title, postContainer, post } from "./style.module.scss"
 
 export default function PostListHome({ pageTitle, pageSubTitle, allPostsMeta, subFolder }) {
 
@@ -29,11 +30,7 @@ export default function PostListHome({ pageTitle, pageSubTitle, allPostsMeta, su
           ))
         }
       </div>
-      {/* <Link href={`/${subFolder}`}>
-        <a className={moreLink}>
-          <h4>more ></h4>
-        </a>
-      </Link> */}
+      <MoreLink path={subFolder} />
     </div>
   )
 }
