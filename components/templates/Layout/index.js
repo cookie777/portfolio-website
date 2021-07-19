@@ -10,10 +10,10 @@ export default function Layout({ children, title, description, image }) {
   const defaultTitle = `tak8`
   const metaTitle = title ? `${title} | ${defaultTitle}` : defaultTitle
 
-  const defaultDescription = `'tak8' is a portfolio website includes blogs and works articles.`
+  const defaultDescription = `'tak8' is an individual website, which host portfolio, blog's and work's articles.`
   const metaDescription = description ? description : defaultDescription
 
-  const defaultImage = `${url}/site-thumbnail.jpg`
+  const defaultImage = `${url}/thumbnail.png`
   const metaImage = image ? image : defaultImage
 
   const router = useRouter()
