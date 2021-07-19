@@ -4,7 +4,7 @@ date: '2021-07-15'
 description: 'We created an iOS game application with Swift. This app provides a multi-payer game to play between your friends and neighbors. Since this game includes great random factors and customization, each time a player will be provided with variable joys. </br>
 
 This app has a lot of UI factors and data models with a reactive relationship. Thus, we adopted RxSwift and MVVM design patterns to completely separate views, models, and logic. '
-image: https://raw.githubusercontent.com/cookie777/images/main/works/2021-06-Queens-Game/thumbnail.webp
+image: https://raw.githubusercontent.com/cookie777/images/main/works/2021-06-Queens-Game/thumbnail.jpg
 keyword: Swift, Realm, RxSwift, MVVM, CoreAnimation, UICollectionView, diffable data sources
 priority: 999
 ---

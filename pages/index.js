@@ -8,6 +8,7 @@ import Network from '@components/organism/Network'
 import { ResumeHome } from '@components/organism/ResumeHome'
 
 
+
 export default function Home({ aboutMePostData, workPostsMeta, blogPostsMeta }) {
 
   return (
