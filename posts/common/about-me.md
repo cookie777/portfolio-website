@@ -7,9 +7,9 @@ description: I'm a iOS mobile developer with extensive experience in designing, 
 
 ## Skills
 
-✔✔✔ iOS:　　　　　　Swift, Objective-C</br>
-✔✔ Back-end:　　　　Java, Python3</br>
-✔ Front-end:　　　　Next.js, React.js</br>
+★★★ iOS:　　　　Swift, Objective-C</br>
+★★ Back-end:　　Java, Python3</br>
+★ Front-end:　　　Next.js, React.js</br>
 
 - Writing Swift full-time for iOS development. 
 - A good understanding of mobile framework: UIKit, Cocoa Touch, RxSwift, diffable datasource 

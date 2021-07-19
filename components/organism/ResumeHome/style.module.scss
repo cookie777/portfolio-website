@@ -2,14 +2,21 @@
 
 .container {
   // for desktop only
-  .desktop {
+  .desktopOff {
+    display: block;
+  }
+  .desktopOn {
     margin-top: 2em;
     display: none;
   }
   @include xlg {
     margin-bottom: 40px;
-    .desktop {
+    .desktopOn {
       display: block;
+    }
+
+    .desktopOff {
+      display: none;
     }
   }
 }

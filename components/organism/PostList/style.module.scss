@@ -4,13 +4,13 @@
 .container {
   // Each article
   .post {
-    margin-top: 24px;
+    margin-top: 48px;
 
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     column-gap: 16px;
-    align-items: center;
+    // align-items: center; // let's see for a while
 
     img {
       width: 200px;
