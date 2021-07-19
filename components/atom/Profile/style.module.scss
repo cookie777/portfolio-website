@@ -1,0 +1,16 @@
+@import "@styles/common";
+
+.container {
+  img {
+    width: 48px;
+    @include md {
+      width: 48px;
+    }
+
+    height: auto;
+    border: 0.2em solid rgb(0, 0, 0);
+    border-radius: 46%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+}
