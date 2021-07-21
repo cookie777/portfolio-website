@@ -13,8 +13,17 @@
     // align-items: center; // let's see for a while
 
     img {
-      width: 200px;
-      height: 200px;
+      max-width: none;
+      width: 160px;
+      height: 160px;
+      @include md {
+        width: 160px;
+        height: 160px;
+      }
+      @include xlg {
+        width: 200px;
+        height: 200px;
+      }
     }
     em {
       font-size: 15px;
@@ -26,6 +35,9 @@
     }
     p {
       @include number-of-lines(3);
+      @include md {
+        @include number-of-lines(3);
+      }
     }
   }
   .post:first-of-type {

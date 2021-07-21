@@ -24,7 +24,7 @@ const data = [
   {
     path: 'email',
     name: 'Email',
-    account: 'takayuki.contact@gmail.com',
+    account: 'takayuki.contact @gmail.com',
     prompt: 'Wanna get in touch? I\'d love to hear from you. If you send me email including your name and message, I\'m willing to reply!',
     link: 'mailto:takayuki.yamaguchi.contact@gmail.com'
   },
