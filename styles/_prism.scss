@@ -131,7 +131,7 @@ https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clik
   /* + additional by me. Inline code */
   :not(pre) > code[class*="language-"] {
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    // font-weight: 600;
+    overflow-wrap: break-word;
     vertical-align: 0.024em;
     padding: 0.2em 0.6em;
     font-size: 0.84em;

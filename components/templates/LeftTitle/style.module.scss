@@ -3,24 +3,17 @@
 .container {
   // whole layout
   display: grid;
+
   @include md {
     grid-template-columns: 1fr;
   }
   @include lg {
     grid-template-columns: 3fr 5fr 1fr;
-    .title {
-      top: 48%;
-      position: fixed;
-    }
-    .content {
-      grid-column-start: 2;
-    }
   }
   @include xlg {
     grid-template-columns: 3.2fr 5.6fr 1.6fr;
   }
 
-  // title
   .title {
     h1 {
       font-size: 32px;
@@ -39,6 +32,21 @@
     h3 {
       font-size: 16px;
       margin-top: 0.08em;
+    }
+  }
+  @include lg {
+    .title {
+      top: 48%;
+      position: fixed;
+    }
+  }
+
+  .content {
+    margin-top: 1.6em;
+  }
+  @include lg {
+    .content {
+      grid-column-start: 2;
     }
   }
 }

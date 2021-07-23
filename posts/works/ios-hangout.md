@@ -81,6 +81,7 @@ For example, if a user chooses 'Restaurant' ➔ 'Nature, Park' ➔ 'Art' in New 
 <div style="
   display: inline-flex;
   gap: 16px;
+  overflow: scroll;
 ">
   <img class="mobile-screen-capture" src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/animation-todo.webp" alt="todo" />
 

@@ -14,6 +14,7 @@ priority: 999
 <img class="mobile-screen-capture" src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-06-Queens-Game/animation-whole-game.webp" alt="Game summary"/>
 
 
+
 ### Backgorund
 
 There are enormous unique and awesome games in every country and culture. "King's game" which is called "王様ゲーム" in Japan is also one of them.  This party game is a sort of combination of, "Simon Says" and "truth or dare", but might be more flexible and thralling. We thought it would be great to introduce this game into a mobile application so that all over the people in world can know, play and share its wonderful experience!
@@ -41,6 +42,7 @@ Lastly, we can introduce a lot of fun animation because it's an app and this mak
   display: flex;
   align-items: center;
   gap: 16px;
+  overflow: scroll;
 ">
 <img class="mobile-screen-capture" src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-06-Queens-Game/concept-queen.webp" alt="Queen" width=240 />
 <img src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-06-Queens-Game/concept-todo.webp" alt="todo" width=240 height="240" />
@@ -203,7 +205,7 @@ extension CommonCommandViewController: UISearchBarDelegate {
 ### pop up transition
 
 
-The default transition animation is nice but limited. To make the transition more game-like, we created a natural pop-up menu. We used `UIViewControllerAnimatedTransitioning` and `UIViewControllerTransitioningDelegate` for customizing mordal animation.
+The default transition animation is nice but limited. To make the transition more game-like, we created a natural pop-up menu. We used `UIViewControllerAnimatedTransitioning` and `UIViewControllerTransitioningDelegate` for customizing modal animation.
 
 
 <img class="mobile-screen-capture" src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-06-Queens-Game/animation-pop-menu.webp" alt="pop up menu" />
