@@ -30,7 +30,7 @@ body {
 
 img {
   z-index: -1;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   max-width: 100%;
 }
@@ -201,7 +201,7 @@ em {
   }
 
   img {
-    margin: 1em auto 0 auto;
+    margin: 1em auto;
   }
 
   .mobile-screen-capture {

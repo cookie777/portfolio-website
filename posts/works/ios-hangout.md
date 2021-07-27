@@ -3,7 +3,7 @@ title: 'iOS App: Hang out Planner'
 date: '2021-01-15'
 description: 'We created a native iOS application with Swift. This app suggests optimized root which includes locations that the user prefers. This app uses modern collection views with diffable data source, async API-fetch with dispatch group.'
 image: https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/thumbnail.png
-keyword: Swift, REST API, DispatchGroup, diffable data sources, MapKit, CoreLocation
+keywords: Swift, REST API, DispatchGroup, diffable data sources, MapKit, CoreLocation
 priority: 998
 ---
 
@@ -81,6 +81,7 @@ For example, if a user chooses 'Restaurant' ➔ 'Nature, Park' ➔ 'Art' in New 
 <div style="
   display: inline-flex;
   gap: 16px;
+  overflow: scroll;
 ">
   <img class="mobile-screen-capture" src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-01-Hang-Out-Planner/animation-todo.webp" alt="todo" />
 

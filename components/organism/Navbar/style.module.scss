@@ -4,10 +4,14 @@
   z-index: 777;
   position: fixed;
   max-width: $max-width;
+  background-color: $main-color;
+  display: flex;
+  justify-content: space-between;
+
   // padding settings
   top: 0;
-  left: 24px;
-  right: 24px;
+  left: 32px;
+  right: 32px;
   padding-top: 32px;
   padding-bottom: 16px;
 
@@ -24,11 +28,6 @@
     padding-top: 40px;
     padding-bottom: 24px;
   }
-
-  background-color: $main-color;
-
-  display: flex;
-  justify-content: space-between;
 
   .logo {
     a {
@@ -83,6 +82,7 @@
 
   //border
   border-bottom: 4px $secondary-color solid;
+  box-shadow: -12px 0px 0px 0px $main-color;
 }
 
 .bottom {

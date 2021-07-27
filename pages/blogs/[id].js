@@ -1,5 +1,5 @@
 import { getAllPostIdsFrom, getSinglePostDataOf } from '@lib/posts'
-import PostContent from '@components/templates/PostContent'
+import PostContent from '@components/organism/PostContent'
 import Layout from '@components/templates/Layout'
 import Tail from '@components/molecule/Tail'
 
