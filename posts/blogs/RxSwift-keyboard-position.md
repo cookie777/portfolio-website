@@ -4,7 +4,7 @@ title: |
 date: '2021-07-21'
 description: This post explains how to adjust content's position when a keyboard shows and dismisses. It is utilized by RxSwift. The key is creating an associated with UIResponder. This post also explains how to dismiss a keyboard when tapping an enter-key or when tapping outside of the keyboard with RxSwift.
 image: https://raw.githubusercontent.com/cookie777/images/main/blogs/2021-07-RxSwift-keyboard-position/thumbnail.png
-keyword: Swift, Keyboard, Notification,  NotificationCenter, RxSwift, Observable
+keywords: Swift, Keyboard, Notification,  NotificationCenter, RxSwift, Observable
 ---
 
 ## What you can know from this article

@@ -5,16 +5,11 @@ description: 'We created an iOS game application with Swift. This app provides a
 
 This app has a lot of UI factors and data models with a reactive relationship. Thus, we adopted RxSwift and MVVM design patterns to completely separate views, models, and logic. '
 image: https://raw.githubusercontent.com/cookie777/images/main/works/2021-06-Queens-Game/thumbnail.png
-keyword: Swift, Realm, RxSwift, MVVM, CoreAnimation, UICollectionView, diffable data sources
+keywords: Swift, Realm, RxSwift, MVVM, CoreAnimation, UICollectionView, diffable data sources
 priority: 999
 ---
 
 ## Motivation
-
-<img class="mobile-screen-capture" src="https://raw.githubusercontent.com/cookie777/images/main/works/2021-06-Queens-Game/animation-whole-game.webp" alt="Game summary"/>
-
-
-
 ### Backgorund
 
 There are enormous unique and awesome games in every country and culture. "King's game" which is called "王様ゲーム" in Japan is also one of them.  This party game is a sort of combination of, "Simon Says" and "truth or dare", but might be more flexible and thralling. We thought it would be great to introduce this game into a mobile application so that all over the people in world can know, play and share its wonderful experience!

@@ -19,8 +19,11 @@
   }
 
   .title {
-    border-bottom: 1.6px solid $secondary-color;
-    padding-bottom: 1.5em;
-    margin-bottom: 2em;
+    h2 {
+      margin-top: 1em;
+    }
+    border-bottom: 2px solid rgba(0, 0, 0, 0.858);
+    padding-bottom: 1.6em;
+    margin-bottom: 2.4em;
   }
 }

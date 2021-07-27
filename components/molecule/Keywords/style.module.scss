@@ -1,0 +1,30 @@
+@import "@styles/common";
+
+.container {
+  margin-top: 0.8em;
+  @include lg {
+    margin-top: 1.2em;
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.72em;
+    row-gap: 0.56em;
+    span {
+      overflow-wrap: break-word;
+      letter-spacing: 0.1em;
+      line-height: 1em;
+      padding: 0.4em 0.8em;
+      font-size: 0.72em;
+      @include md {
+        font-size: 0.8em;
+      }
+      @include lg {
+        font-size: 0.88em;
+      }
+      border-radius: 0.8em;
+      color: rgb(212, 217, 225);
+      background-color: rgb(48, 49, 52);
+    }
+  }
+}

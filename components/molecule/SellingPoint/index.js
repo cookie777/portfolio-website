@@ -2,26 +2,6 @@ import styles from './style.module.scss'
 
 
 export default function SellingPoint() {
-  const DataList = () => {
-    return (
-      <>
-        {data.map(({ title, description }) => {
-          return (
-            < li key={title}>
-              <h3>
-                {title}
-              </h3>
-              <p>
-                {description}
-              </p>
-            </li>
-          )
-        })
-        }
-      </>
-    )
-  }
-
   return (
     <div className={styles.container}>
       <h1>
@@ -30,8 +10,27 @@ export default function SellingPoint() {
       <ul>
         <DataList />
       </ul>
-
     </div >
+  )
+}
+
+const DataList = () => {
+  return (
+    <>
+      {data.map(({ title, description }) => {
+        return (
+          < li key={title}>
+            <h3>
+              {title}
+            </h3>
+            <p>
+              {description}
+            </p>
+          </li>
+        )
+      })
+      }
+    </>
   )
 }
 
