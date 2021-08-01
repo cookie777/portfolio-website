@@ -15,7 +15,7 @@ export default function Works({ postData }) {
 
   return (
     <Layout {...headProps}>
-      <PostContent postData={postData} />
+      <PostContent {...postData} />
       <Tail message={`Works`} />
     </Layout>
   )

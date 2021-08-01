@@ -7,20 +7,17 @@ interface Menu {
   menuName: string;
 }
 
-export function NavBarBottomButton(menu: Menu) {
-  const path = menu.path;
-  const name = menu.menuName;
-
+export function NavBarBottomButton({ path, menuName }: Menu) {
   return (
     <Link href={`/${path == "home" ? "" : path}`}>
       <a className={styles.container}>
         <Image
           src={`/icons/navbar/${path}.svg`}
-          alt={name}
+          alt={menuName}
           width={24}
           height={24}
         />
-        <p>{name}</p>
+        <p>{menuName}</p>
       </a>
     </Link>
   );

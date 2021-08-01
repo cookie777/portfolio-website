@@ -1,17 +1,15 @@
+import Keywords from "@components/molecule/Keywords";
+import { PostData } from "types";
+import styles from "./style.module.scss";
 
-import Keywords from '@components/molecule/Keywords';
-import { container, title } from './style.module.scss';
-
-
-export default function PostContent({ postData }) {
+export default function PostContent(postData: PostData) {
   return (
-    <div className={container}>
-
+    <div className={styles.container}>
       <h3>{postData.date}</h3>
       <div></div>
 
       <div className={`markdown`}>
-        <div className={title}>
+        <div className={styles.title}>
           <h1>{postData.title}</h1>
           <Keywords keywords={postData.keywords} />
           <h2>Summary</h2>
@@ -20,5 +18,5 @@ export default function PostContent({ postData }) {
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
     </div>
-  )
+  );
 }

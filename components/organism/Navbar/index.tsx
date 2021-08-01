@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import styles from './style.module.scss'
-import { NavBarBottomButton } from '@components/atom/NavBarBottomButton'
-import { NavBarTopButton } from '@components/atom/NavbarTopButton'
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./style.module.scss";
+import { NavBarBottomButton } from "@components/atom/NavBarBottomButton";
+import { NavBarTopButton } from "@components/atom/NavbarTopButton";
 
 export default function NavigationBar() {
   return (
@@ -29,37 +29,37 @@ export default function NavigationBar() {
         </div>
       </div>
 
-
       {/* bottom  */}
       <div className={styles.bottom}>
         {menuItems.map(({ path, menuName }) => {
-          return <NavBarBottomButton path={path} menuName={menuName} key={path} />
+          return (
+            <NavBarBottomButton path={path} menuName={menuName} key={path} />
+          );
         })}
       </div>
-
-    </div >
-  )
+    </div>
+  );
 }
 
-const menuItems = [
+const menuItems: Array<{ [key: string]: string }> = [
   {
     path: "home",
-    menuName: "Home"
+    menuName: "Home",
   },
   {
     path: "about",
-    menuName: "About"
+    menuName: "About",
   },
   {
     path: "works",
-    menuName: "Works"
+    menuName: "Works",
   },
   {
     path: "blogs",
-    menuName: "Blogs"
+    menuName: "Blogs",
   },
   {
     path: "contact",
-    menuName: "Contact"
+    menuName: "Contact",
   },
-]
+];

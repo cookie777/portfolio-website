@@ -23,7 +23,7 @@ export default function PostListHome({ pageTitle, pageSubTitle, allPostsMeta, su
                 </div>
                 <img
                   src={image}
-                  als={title}
+                  alt={title}
                 />
               </a>
             </Link>

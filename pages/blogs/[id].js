@@ -15,7 +15,7 @@ export default function Blogs({ postData }) {
 
   return (
     <Layout {...headProps}>
-      <PostContent postData={postData} />
+      <PostContent {...postData} />
       <Tail message={`Blogs`} />
     </Layout>
   )
