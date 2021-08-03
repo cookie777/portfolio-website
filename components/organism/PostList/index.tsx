@@ -16,9 +16,11 @@ export default function PostList({ allPostsMeta, subFolder }: ListData) {
             <div>
               <em>{date}</em>
               <h3>{title}</h3>
-              <div dangerouslySetInnerHTML={{ __html: descriptionHtml }} />
+              <div
+                dangerouslySetInnerHTML={{ __html: descriptionHtml ?? "" }}
+              />
             </div>
-            <img src={image} alt={title} />
+            <img src={image ?? ""} alt={title} />
           </a>
         </Link>
       ))}

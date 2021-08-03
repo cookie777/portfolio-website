@@ -11,9 +11,11 @@ export default function PostContent(postData: PostData) {
       <div className={`markdown`}>
         <div className={styles.title}>
           <h1>{postData.title}</h1>
-          <Keywords keywords={postData.keywords} />
+          <Keywords keywords={postData.keywords ?? ""} />
           <h2>Summary</h2>
-          <div dangerouslySetInnerHTML={{ __html: postData.descriptionHtml }} />
+          <div
+            dangerouslySetInnerHTML={{ __html: postData.descriptionHtml ?? "" }}
+          />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>

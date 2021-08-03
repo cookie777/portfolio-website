@@ -1,8 +1,9 @@
+import { ReactNode } from "react";
 import { SocialMedia } from "types";
 import SocialAccount from "../../molecule/SocialAccountIcon";
 import styles from "./style.module.scss";
 
-const Network = ({ title }: { title: string }) => {
+const Network = ({ title }: { title: string | ReactNode | null }) => {
   return (
     <div className={styles.container}>
       {title}
