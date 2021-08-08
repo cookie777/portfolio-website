@@ -1,9 +1,8 @@
 import NavigationBar from "@components/organism/Navbar";
-import fetchCurrentDomain from "@lib/fetchDomain";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import { PageMeta } from "types";
 import { ReactNode } from "react";
+import { fetchCurrentDomain, fetchCurrentURL } from "@lib/fetchDomain";
 
 export default function Layout({
   children,
@@ -11,7 +10,7 @@ export default function Layout({
   description,
   image,
 }: { children: ReactNode } & PageMeta) {
-  const url: string = fetchCurrentDomain();
+  const domain: string = fetchCurrentDomain();
 
   const defaultTitle: string = `tak8`;
   const metaTitle: string = title ? `${title} | ${defaultTitle}` : defaultTitle;
@@ -21,11 +20,10 @@ export default function Layout({
     ? description
     : defaultDescription;
 
-  const defaultImage: string = `${url}/thumbnail.png`;
+  const defaultImage: string = `${domain}/thumbnail.png`;
   const metaImage: string = image ? image : defaultImage;
 
-  const router = useRouter();
-  const metaURL: string = `${url}${router.asPath}`;
+  const metaURL: string = fetchCurrentURL();
 
   return (
     <>
