@@ -20,41 +20,51 @@ export async function getAllPostsMetaOf(
 ): Promise<PostMeta[]> {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory + "/" + subFolder);
-  const allPostsData: Array<PostMeta> = await Promise.all(
-    fileNames.map(async (fileName) => {
-      const id = fileName.replace(/\.md$/, "");
 
-      // Read markdown file as string
-      const fullPath = path.join(postsDirectory + "/" + subFolder, fileName);
-      const fileContents = fs.readFileSync(fullPath, "utf8");
-
-      // Use gray-matter to parse the post metadata section
-      const matterResult = matter(fileContents);
-
-      // Create html description
-      if ("description" in matterResult.data) {
-        matterResult.data.descriptionHtml = await convertToHtml(
-          matterResult.data.description
-        );
-      }
-
-      // Combine the data with the id
-      return {
-        id,
-        ...matterResult.data,
-      } as PostMeta;
-    })
+  // Generate all post meta based on subFolder and reduce logic
+  const allPostsData: Array<PostMeta> = await fileNames.reduce(
+    createReduceLogic(subFolder),
+    Promise.resolve([])
   );
 
   // Sort posts by larger priority < larger date
-  return allPostsData.sort((a: PostMeta, b: PostMeta) => {
-    const diffByPriority = comparePriority(a, b);
-    if (diffByPriority == 0) {
-      return compareDate(a, b);
+  return sortPost(allPostsData);
+}
+
+function createReduceLogic(subFolder: string) {
+  return async (soFarMeta: Promise<PostMeta[]>, fileName: string) => {
+    const res = await soFarMeta;
+    const id = fileName.replace(/\.md$/, "");
+
+    // Read markdown file as string
+    const fullPath = path.join(postsDirectory + "/" + subFolder, fileName);
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents);
+
+    // Ignore draft
+    if ("draft" in matterResult.data && matterResult.data["draft"]) {
+      return res;
     }
 
-    return diffByPriority;
-  });
+    // Create html description
+    if ("description" in matterResult.data) {
+      matterResult.data.descriptionHtml = await convertToHtml(
+        matterResult.data.description
+      );
+    }
+
+    const postMeta = {
+      id,
+      ...matterResult.data,
+    } as PostMeta;
+
+    res.push(postMeta);
+
+    // Combine the data with the id
+    return res;
+  };
 }
 
 function comparePriority(a: PostMeta, b: PostMeta) {
@@ -67,6 +77,16 @@ function compareDate(a: PostMeta, b: PostMeta) {
   const dateA = new Date(a.date ?? "");
   const dateB = new Date(b.date ?? "");
   return -dateA.getTime() + dateB.getTime();
+}
+
+function sortPost(source: PostMeta[]) {
+  return source.sort((a: PostMeta, b: PostMeta) => {
+    const diffByPriority = comparePriority(a, b);
+    if (diffByPriority == 0) {
+      return compareDate(a, b);
+    }
+    return diffByPriority;
+  });
 }
 
 /**
