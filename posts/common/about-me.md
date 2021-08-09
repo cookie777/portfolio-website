@@ -46,7 +46,7 @@ _Self-employed / Canada, Vancouver / March 1st 2021 - current_
 
 _DPCode Inc. / Canada, Vancouver / May 1st 2021 – current_
 
-- Worked as Production Manager of open online course provider aimed at professional adults and - students.
+- Worked as Production Manager of [web application](https://dpcode.academy/), which is an open online course provider aimed at professional adults and - students.
 
 - As Production Manager:
   - Designed fundamental system design including Next.js and AWS

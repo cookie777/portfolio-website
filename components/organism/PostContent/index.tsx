@@ -25,7 +25,7 @@ export default function PostContent(postData: PostData) {
           </div>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </div>
-        <TwitterShareButton path={currentPath} />
+        <TwitterShareButton {...{ title: postData.title, path: currentPath }} />
       </div>
     </div>
   );
