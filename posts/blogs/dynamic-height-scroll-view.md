@@ -1,6 +1,6 @@
 ---
-title: 'How to create scroll view capable with dynamic content size.'
-date: '2021-06-15'
+title: "How to create scroll view capable with dynamic content size."
+date: "2021-06-15"
 description: This blog explains how to create scroll view even you don't know the inside content size. The point is configure both scroll view and content's constraint with using `contentLayoutGuide`
 image: https://raw.githubusercontent.com/cookie777/images/main/blogs/2021-06-Dynamic-size-scroll-view/thumbnail.png
 keywords: Swift, UIScrollView, Dynamic size, contentLayoutGuide
@@ -59,9 +59,7 @@ NSLayoutConstraint.activate([
    background-color:#ff0;border-radius: 6px;"
   />
 
-
 ### Configure the Content
-
 
 Let's add a content which is vertically long. We can scroll vertically but not let scroll horizontally.
 
@@ -90,7 +88,6 @@ dynamicSizeContent.centerXAnchor.constraint(
 ).isActive = true
 ```
 
-
 What is this doing? The first half decides the width of content. The content width is same as scroll size but 24 spaces shorter both from left and right. This is kind a padding if you want to set.
 
 The second half keeps the content to be center. This will center and fix the content. If the content is horizontally short enough, you don't need this.
@@ -101,13 +98,13 @@ I made an simulation to make the content dynamically increase. This is a functio
 
 ```swift
 private func addToDynamicContent() {
-  
+
   let uiv = UIView()
   uiv.heightAnchor.constraint(equalToConstant: 40).isActive = true
   uiv.backgroundColor = .systemRed
-  
+
   dynamicSizeContent.addArrangedSubview(uiv)
-  
+
 }
 ```
 
@@ -138,7 +135,7 @@ Right now the scroll view is not working. Even if you add come sub views and set
 
 ### Configure the Content area
 
-Now let's set the content area for scroll view. 
+Now let's set the content area for scroll view.
 
 ```swift
 let sa = scrollView.contentLayoutGuide
@@ -178,10 +175,8 @@ var scrollView = DynamicHeightScrollView(
    background-color:#ff0;border-radius: 6px;"
   />
 
-
-
 ## Conclusion
 
-When content view inside the scroll view is very large, or you're not sure how large it'll be, setting content constraint by using  `contentLayoutGuide` will easily make the scrolling better!
+When content view inside the scroll view is very large, or you're not sure how large it'll be, setting content constraint by using `contentLayoutGuide` will easily make the scrolling better!
 
 You can look further from this [sample project](https://github.com/cookie777/SwiftTips/tree/main/DynamicSizeScrollView/DynamicSizeScrollView).

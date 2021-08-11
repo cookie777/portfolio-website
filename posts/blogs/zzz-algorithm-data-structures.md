@@ -1,10 +1,11 @@
 ---
 title: |
-  What I always mistake about minimum spanning tree (MST) with Prim's algorithm
+  Basic data structures that are necessary
 date: "2021-07-27"
 description: This is a post for a brief explanation of the algorithm. This is a note mainly for what I always mistake when solving the minimum spanning tree (MST) using Prim's algorithm. Thus, it will shortly focus on the algorithm and try to look more at what we have to be careful.
 image: https://raw.githubusercontent.com/cookie777/images/main/blogs/2021-07-MST-prim/thumbnail.png
-keywords: Study note, Algorithm, Prim, Minimum Spanning Tree, MST, PriorityQueue, Greedy, python
+keywords: Algorithm, Prim, Minimum Spanning Tree, MST, PriorityQueue, Greedy, python
+draft: True
 ---
 
 ## What is Minimum Spanning Tree(MST)?
