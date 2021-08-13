@@ -1,16 +1,16 @@
 // when you write responsive, it must be smaller to larger
-@mixin md($min: $breakpoint-medium) {
+@mixin large-mobile($min: $breakpoint-large-mobile) {
   @media (min-width: #{$min}) {
     @content;
   }
 }
-@mixin lg($min: $breakpoint-large) {
+@mixin tablet($min: $breakpoint-tablet) {
   @media (min-width: #{$min}) {
     @content;
   }
 }
 
-@mixin xlg($min: $breakpoint-xlarge) {
+@mixin laptop($min: $breakpoint-laptop) {
   @media (min-width: #{$min}) {
     @content;
   }

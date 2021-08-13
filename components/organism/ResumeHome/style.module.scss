@@ -9,7 +9,7 @@
     margin-top: 2em;
     display: none;
   }
-  @include xlg {
+  @include laptop {
     margin-bottom: 40px;
     .desktopOn {
       display: block;

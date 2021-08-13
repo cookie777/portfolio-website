@@ -8,7 +8,7 @@
     display: block;
     margin: 0 auto;
     width: 24px;
-    @include md {
+    @include large-mobile {
       width: 32px;
     }
   }
