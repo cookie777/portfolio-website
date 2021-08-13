@@ -17,9 +17,12 @@
   @include xlg {
     grid-template-columns: 2.4fr 5.6fr 2fr;
   }
+
   .content {
     overflow: auto;
-    grid-column-start: 2;
+    @include md {
+      grid-column-start: 2;
+    }
   }
 
   .title {
