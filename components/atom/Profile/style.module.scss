@@ -3,7 +3,7 @@
 .container {
   img {
     width: 48px;
-    @include md {
+    @include large-mobile {
       width: 48px;
     }
 

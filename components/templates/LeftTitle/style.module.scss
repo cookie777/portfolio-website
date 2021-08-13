@@ -4,13 +4,13 @@
   // whole layout
   display: grid;
 
-  @include md {
+  @include large-mobile {
     grid-template-columns: 1fr;
   }
-  @include lg {
+  @include tablet {
     grid-template-columns: 3fr 5fr 1fr;
   }
-  @include xlg {
+  @include laptop {
     grid-template-columns: 3.2fr 5.6fr 1.6fr;
   }
 
@@ -18,12 +18,12 @@
     h1 {
       font-size: 32px;
     }
-    @include lg {
+    @include tablet {
       h1 {
         font-size: 40px;
       }
     }
-    @include xlg {
+    @include laptop {
       h1 {
         font-size: 64px;
       }
@@ -34,7 +34,7 @@
       margin-top: 0.08em;
     }
   }
-  @include lg {
+  @include tablet {
     .title {
       top: 48%;
       position: fixed;
@@ -44,7 +44,7 @@
   .content {
     margin-top: 1.6em;
   }
-  @include lg {
+  @include tablet {
     .content {
       grid-column-start: 2;
     }

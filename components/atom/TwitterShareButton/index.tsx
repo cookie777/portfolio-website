@@ -9,7 +9,6 @@ interface ShareInfo {
 export default function TwitterShareButton({ path, title }: ShareInfo) {
   const message: string = `${title}%0A${path}`;
   const twitterIntent: string = `https://twitter.com/intent/tweet?text=`;
-  console.log(`${twitterIntent}${message}...`);
 
   return (
     <div className={styles.container}>

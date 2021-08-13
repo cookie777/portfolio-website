@@ -5,15 +5,15 @@
   .network {
     display: grid;
     grid-template-columns: 1fr;
-    @include md {
+    @include large-mobile {
       grid-template-columns: repeat(2, auto);
     }
     gap: 40px;
-    @include xlg {
+    @include laptop {
       gap: 40px 80px;
     }
 
-    @include lg {
+    @include tablet {
       margin-top: 2em;
     }
   }

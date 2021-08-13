@@ -15,14 +15,14 @@
   padding-top: 32px;
   padding-bottom: 16px;
 
-  @include md {
+  @include large-mobile {
     left: 48px;
     right: 48px;
     padding-top: 32px;
     padding-bottom: 24px;
   }
 
-  @include lg {
+  @include tablet {
     left: 64px;
     right: 64px;
     padding-top: 40px;
@@ -44,7 +44,7 @@
 
   .menu {
     display: none;
-    @include md {
+    @include large-mobile {
       display: grid;
       justify-content: end;
       grid-template-columns: repeat(4, 1fr);
@@ -52,7 +52,7 @@
     }
 
     // If desk top menu. display menus, and 2nd element is fake space.
-    @include xlg {
+    @include laptop {
       width: calc(#{$right-content-width}/ 5 * 8);
       grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
       :nth-child(3),
@@ -68,7 +68,7 @@
   // Fake space to make a gap between "about" and "works", when desktop size
   .space {
     display: none;
-    @include xlg {
+    @include laptop {
       display: block;
     }
   }
@@ -108,7 +108,7 @@
     }
   }
 
-  @include md {
+  @include large-mobile {
     display: none;
   }
 }

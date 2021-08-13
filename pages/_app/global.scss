@@ -19,10 +19,10 @@ body {
   max-width: $max-width;
   min-width: $min-width;
   margin: 0 32px;
-  @include md {
+  @include large-mobile {
     margin: 0 48px;
   }
-  @include lg {
+  @include tablet {
     margin: 0 64px;
     padding-top: calc(92px + 64px); // space for top nav bar
   }
@@ -63,7 +63,7 @@ h1 {
   font-size: 36px;
   line-height: 116%;
   letter-spacing: 0.01em;
-  @include lg {
+  @include tablet {
     font-size: 48px;
   }
 }
@@ -77,7 +77,7 @@ h2 {
   font-size: 20px;
   line-height: 108%;
   letter-spacing: 0.01em;
-  @include lg {
+  @include tablet {
     font-size: 28px;
   }
 }
@@ -91,7 +91,7 @@ h3 {
   font-size: 16px;
   line-height: 132%;
   letter-spacing: 0.03em;
-  @include lg {
+  @include tablet {
     font-size: 18px;
   }
 }
@@ -114,7 +114,7 @@ h4 {
   font-size: 13px;
   line-height: 164%;
   letter-spacing: 0.04em;
-  @include lg {
+  @include tablet {
     font-size: 14px;
   }
 }
@@ -128,7 +128,7 @@ p {
   font-weight: 400;
   font-size: 13px;
   line-height: 164%;
-  @include md {
+  @include large-mobile {
     font-size: 16px;
   }
   letter-spacing: 0.04em;
@@ -176,7 +176,7 @@ em {
     font-weight: 400;
     font-size: 13px;
     color: $text-p-color;
-    @include md {
+    @include large-mobile {
       font-size: 16px;
     }
     margin-top: 0.56em;
@@ -221,7 +221,7 @@ em {
 
   @include prism();
 
-  @include md {
+  @include large-mobile {
     code[class*="language-"],
     pre[class*="language-"] {
       font-size: 16px;

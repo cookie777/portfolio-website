@@ -2,7 +2,7 @@
 
 .container {
   margin-top: 0.8em;
-  @include lg {
+  @include tablet {
     margin-top: 1.2em;
   }
   .list {
@@ -16,10 +16,10 @@
       line-height: 1em;
       padding: 0.4em 0.8em;
       font-size: 0.72em;
-      @include md {
+      @include large-mobile {
         font-size: 0.8em;
       }
-      @include lg {
+      @include tablet {
         font-size: 0.88em;
       }
       border-radius: 0.8em;

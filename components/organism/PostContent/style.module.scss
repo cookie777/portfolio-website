@@ -1,7 +1,7 @@
 @import "@styles/common";
 
 .container {
-  @include md {
+  @include large-mobile {
     // only direct and first div.
     > h3:first-of-type {
       position: fixed;
@@ -11,15 +11,18 @@
 
   // main title is right side
   display: grid;
-  @include md {
+  @include large-mobile {
     grid-template-columns: 2fr 5fr 1fr;
   }
-  @include xlg {
+  @include laptop {
     grid-template-columns: 2.4fr 5.6fr 2fr;
   }
+
   .content {
     overflow: auto;
-    grid-column-start: 2;
+    @include large-mobile {
+      grid-column-start: 2;
+    }
   }
 
   .title {

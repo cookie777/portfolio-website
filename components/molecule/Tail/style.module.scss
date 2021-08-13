@@ -2,7 +2,7 @@
 
 .container {
   display: none;
-  @include lg {
+  @include tablet {
     display: block;
   }
   position: fixed;

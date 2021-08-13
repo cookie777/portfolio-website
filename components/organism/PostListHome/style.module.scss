@@ -16,16 +16,16 @@
     display: grid;
     row-gap: 24px;
 
-    @include md {
+    @include large-mobile {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 48px;
     }
 
-    @include lg {
+    @include tablet {
       column-gap: 64px;
     }
 
-    @include xlg {
+    @include laptop {
       grid-template-columns: repeat(1, 1fr);
     }
 
@@ -49,11 +49,11 @@
         max-width: none;
         width: 120px;
         height: 120px;
-        @include md {
+        @include large-mobile {
           width: 96px;
           height: 96px;
         }
-        @include lg {
+        @include tablet {
           width: 120px;
           height: 120px;
         }
