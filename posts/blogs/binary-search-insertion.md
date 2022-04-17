@@ -2,6 +2,7 @@
 title: |
   How to implement binary search and insertion.
 date: "2021-08-08"
+dbId: 61888383e0e1844eff991564
 description: This post explains how to implement binary search in a very simple way. In addition to binary search, it also introduces how to implement binary insertion (both considering left insertion, right insertion). This article is a study note so it might have incomplete info.
 image: https://raw.githubusercontent.com/cookie777/images/main/blogs/2021-08-binary-search-insertion/thumbnail.png
 keywords: Algorithm, Binary Search, Binary insertion, python, bisect

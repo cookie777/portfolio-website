@@ -56,6 +56,7 @@ export async function getStaticProps() {
   const aboutMePostData = await getSinglePostDataOf(`common`, `about-me`);
   const workPostsMeta = await getAllPostsMetaOf(`works`);
   const blogPostsMeta = await getAllPostsMetaOf(`blogs`);
+
   return {
     props: {
       aboutMePostData,
