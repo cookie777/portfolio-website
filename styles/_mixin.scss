@@ -16,6 +16,19 @@
   }
 }
 
+@mixin large-monitor($min: $breakpoint-large-monitor) {
+  @media (min-width: #{$min}) {
+    @content;
+  }
+}
+
+@mixin max-width {
+  max-width: 88vw;
+  @include large-mobile {
+    max-width: min(72vw, 1520px);
+  }
+}
+
 @mixin number-of-lines($n) {
   display: -webkit-box;
   -webkit-line-clamp: $n;
