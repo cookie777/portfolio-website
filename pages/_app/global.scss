@@ -16,14 +16,10 @@ body {
   line-height: 150%;
   padding-top: calc(92px + 40px); // space for top nav bar
   padding-bottom: 128px; // space for bottom nav bar
-  max-width: $max-width;
+  @include max-width;
   min-width: $min-width;
-  margin: 0 32px;
-  @include large-mobile {
-    margin: 0 48px;
-  }
+  margin: 0 auto;
   @include tablet {
-    margin: 0 64px;
     padding-top: calc(92px + 64px); // space for top nav bar
   }
 }

@@ -22,7 +22,6 @@ export default function NavigationBar() {
         <div className={styles.menu}>
           {/* about, works, blogs, contact */}
           <NavBarTopButton path={"about"} menuName={"About"} />
-          <div className={styles.space}></div>
           <NavBarTopButton path={"works"} menuName={"Works"} />
           <NavBarTopButton path={"blogs"} menuName={"Blogs"} />
           <NavBarTopButton path={"contact"} menuName={"Contact"} />
