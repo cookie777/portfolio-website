@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 export default function SellingPoint() {
   return (
     <div className={styles.container}>
-      <h1>My stength</h1>
+      <h1>My strength</h1>
       <ul>
         <DataList />
       </ul>
