@@ -10,7 +10,7 @@ $breakpoint-laptop: 1200px;
 $breakpoint-large-monitor: 1900px;
 
 $font-family: Raleway, sans-serif;
-$max-width: 1920px;
+$max-width: min(72vw, 1520px);
 $min-width: 240px;
 
 $right-content-width: 440px; // width of "work    blogs   contact"
