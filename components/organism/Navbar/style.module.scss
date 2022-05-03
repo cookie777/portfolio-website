@@ -66,10 +66,11 @@
 .bottom {
   z-index: 777;
   position: fixed;
+  max-width: $max-width;
+  margin: 0 auto;
   bottom: 0;
-  // These are needed to realize fixed + display flex (stretching width)
-  left: 32px;
-  right: 32px;
+  left: 0;
+  right: 0;
 
   display: flex;
   justify-content: space-between;
