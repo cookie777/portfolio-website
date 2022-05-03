@@ -3,28 +3,23 @@
 .top {
   z-index: 777;
   position: fixed;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
   max-width: $max-width;
   background-color: $main-color;
   display: flex;
   justify-content: space-between;
-
-  // padding settings
-  top: 0;
-  left: 32px;
-  right: 32px;
+  
   padding-top: 32px;
   padding-bottom: 16px;
 
   @include large-mobile {
-    left: 48px;
-    right: 48px;
-    padding-top: 32px;
     padding-bottom: 24px;
   }
 
   @include tablet {
-    left: 64px;
-    right: 64px;
     padding-top: 40px;
     padding-bottom: 24px;
   }
@@ -50,28 +45,11 @@
       grid-template-columns: repeat(4, 1fr);
       width: 60%;
     }
-
-    // If desk top menu. display menus, and 2nd element is fake space.
     @include laptop {
-      width: calc(#{$right-content-width}/ 5 * 8);
-      grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-      :nth-child(3),
-      :nth-child(4) {
-        text-align: left;
-      }
-      :nth-child(4) {
-        padding-left: 24px;
-      }
+      width: 40%;
     }
   }
 
-  // Fake space to make a gap between "about" and "works", when desktop size
-  .space {
-    display: none;
-    @include laptop {
-      display: block;
-    }
-  }
 
   a {
     align-self: end; // + grid -> bottom align
