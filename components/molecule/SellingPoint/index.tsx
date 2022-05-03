@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 export default function SellingPoint() {
   return (
     <div className={styles.container}>
-      <h1>Why me?</h1>
+      <h1>My strength</h1>
       <ul>
         <DataList />
       </ul>
@@ -30,16 +30,16 @@ const data: Array<{ [name: string]: string }> = [
   {
     title: "Master degree of Computer Science",
     description:
-      "I have a both bachelor and master degree of Computer Science. I have a solid knowledge for algorithm and how computer works.",
+      "Both bachelor and master degree of Computer Science. Have a solid knowledge for algorithms, data structure and how computer works.",
   },
   {
-    title: "iOS Developer Experience",
+    title: "iOS Developer",
     description:
-      "I have experienced publishing iOS apps. I'm familiar with OOP programming, design patters, and architectures",
+      "Working as an iOS developer currently. Familiar with OOP, design patters, and architectures",
   },
   {
-    title: "UI Designer Experience",
+    title: "UI Designer",
     description:
-      "I have experienced working as a UI designer several times with other developers. I'm familiar with Apple’s Human Interface Guidelines. ",
+      "Have experiences for working as a UI designer several times with other developers. Familiar with Apple’s Human Interface Guidelines. ",
   },
 ];
