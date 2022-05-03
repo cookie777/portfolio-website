@@ -16,6 +16,12 @@
   }
 }
 
+@mixin large-monitor($min: $breakpoint-large-monitor) {
+  @media (min-width: #{$min}) {
+    @content;
+  }
+}
+
 @mixin number-of-lines($n) {
   display: -webkit-box;
   -webkit-line-clamp: $n;
