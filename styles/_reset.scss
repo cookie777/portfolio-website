@@ -132,10 +132,10 @@ table {
 a {
   text-decoration: none;
   &:link {
-    color: $secondary-color;
+    color: $neutrals-text;
   }
   &:visited {
-    color: $secondary-color;
+    color: $neutrals-text;
   }
   &:hover {
     // color: $accent-color;

@@ -12,7 +12,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: $font-family;
-  color: $secondary-color;
+  color: $neutrals-text;
   line-height: 150%;
   padding-top: calc(92px + 40px); // space for top nav bar
   padding-bottom: 128px; // space for bottom nav bar
@@ -135,14 +135,14 @@ div > p:first-child {
 
 strong {
   font-weight: 600;
-  color: $secondary-color;
+  color: $neutrals-text;
 }
 
 em {
   font-size: 0.8em;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: $secondary-sub1-color;
+  color: $neutrals-text-300;
 }
 
 // These styles are only adapted for single post page generated from .md
@@ -171,7 +171,7 @@ em {
   li {
     font-weight: 400;
     font-size: 13px;
-    color: $text-p-color;
+    color: $neutrals-text-400;
     @include large-mobile {
       font-size: 16px;
     }
