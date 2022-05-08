@@ -3,6 +3,11 @@
 .container {
   h4 {
     // text-align: end;
+  a{
+    &:hover {
+      color: $neutrals-text-strong;
+    }
+    display: block;
     margin-top: 1em;
     margin-right: 2em;
     color: $neutrals-text;

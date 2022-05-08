@@ -4,6 +4,13 @@
 .container {
   // Each article
   .post {
+    // change all children at the same time
+    // &:hover {
+    //   text-decoration: none;
+    //   -webkit-box-shadow: 0px 1px 0px 0px $neutrals-text; 
+    //   box-shadow: 0px 1px 0px 0px $neutrals-text; 
+    // }
+
     margin-top: 48px;
 
     display: grid;

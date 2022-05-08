@@ -57,6 +57,16 @@
     font-size: 16px;
     font-weight: 800;
     text-align: right;
+
+    &:link {
+      color: $neutrals-text-strong;
+    }
+    &:visited {
+      color: $neutrals-text-strong;
+    }
+    &:hover {
+      color: $neutrals-text-strong;
+    }
   }
 
   //border
