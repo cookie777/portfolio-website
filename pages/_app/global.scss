@@ -95,6 +95,7 @@ h3 {
     font-size: 18px;
   }
 }
+
 h1 + h3,
 h2 + h3 {
   margin-top: 0.8em;
@@ -157,13 +158,18 @@ a {
     color: $neutrals-text;
   }
   &:visited {
-    color: $neutrals-text;
+    color: $neutrals-text !important;
   }
   &:hover {
     color: $neutrals-text;
     text-decoration: underline;
   }
 }
+// any link under header must be same color to header
+h1 a, h2 a, h3 a, h4 a, h5 a {
+  color: $neutrals-text-strong !important;
+}
+
 
 // These styles are only adapted for single post page generated from .md
 .markdown {
