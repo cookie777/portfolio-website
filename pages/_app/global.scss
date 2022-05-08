@@ -13,6 +13,7 @@ body {
   box-sizing: border-box;
   font-family: $font-family;
   color: $neutrals-text;
+  background-color: $neutrals-background;
   line-height: 150%;
   padding-top: calc(92px + 40px); // space for top nav bar
   padding-bottom: 128px; // space for bottom nav bar
