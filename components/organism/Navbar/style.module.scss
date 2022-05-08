@@ -9,7 +9,6 @@
   left: 0;
   right: 0;
   @include max-width;
-  background-color: $neutrals-background;
   display: flex;
   justify-content: space-between;
   
