@@ -1,9 +1,20 @@
-$neutrals-background: #ffffff;
-$neutrals-text: #000000;
-$neutrals-text-400: #2b2d30;
-$neutrals-text-300: #767171;
-// $secondary-sub2-color: #acabab;
+// Config
+$is-dark-mode: true;
+// $is-dark-mode: false;
 
+// color theme
+$neutrals-background: #f3f5f8;
+$neutrals-text-strong: #0f1011;
+$neutrals-text: #5d5f64;
+$neutrals-text-weak: #515357;
+@if $is-dark-mode {
+    $neutrals-background: #151618;
+    $neutrals-text-strong: #e0e5ee;
+    $neutrals-text: #a2abb8;
+    $neutrals-text-weak: #5a6779;
+} 
+
+// Break point
 $breakpoint-large-mobile: 600px;
 $breakpoint-tablet: 900px;
 $breakpoint-laptop: 1200px;
@@ -11,5 +22,4 @@ $breakpoint-large-monitor: 1900px;
 
 $font-family: Raleway, sans-serif;
 $min-width: 240px;
-
 $right-content-width: 440px; // width of "work    blogs   contact"
