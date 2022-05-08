@@ -55,6 +55,7 @@ p + div {
 }
 
 h1 {
+  color: $neutrals-text-strong;
   margin-top: 0.4em;
   font-weight: 900;
   font-size: 36px;
@@ -69,6 +70,7 @@ div > h1:first-child {
 }
 
 h2 {
+  color: $neutrals-text-strong;
   font-weight: 800;
   margin-top: 1.28em;
   font-size: 20px;
@@ -83,6 +85,7 @@ div > h2:first-child {
 }
 
 h3 {
+  color: $neutrals-text-strong;
   font-weight: 800;
   margin-top: 1.2em;
   font-size: 16px;
@@ -106,6 +109,7 @@ div > h3:first-child {
 }
 
 h4 {
+  color: $neutrals-text-strong;
   font-weight: 700;
   margin-top: 0.96em;
   font-size: 13px;
@@ -120,11 +124,10 @@ div > h4:first-child {
 }
 
 p {
-  margin-top: 0.56em;
-  color: rgb(66, 71, 75);
+  margin-top: 0.72em;
   font-weight: 400;
   font-size: 13px;
-  line-height: 164%;
+  line-height: 170%;
   @include large-mobile {
     font-size: 16px;
   }
@@ -199,12 +202,11 @@ a {
   li {
     font-weight: 400;
     font-size: 13px;
-    color: $neutrals-text-400;
     @include large-mobile {
       font-size: 16px;
     }
     margin-top: 0.56em;
-    line-height: 174%;
+    line-height: 180%;
     letter-spacing: 0.04em;
     display: list-item;
     margin-left: 18px; // this must need, (default it's hidden)
