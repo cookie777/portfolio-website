@@ -14,7 +14,7 @@ export default function PostList({ allPostsMeta, subFolder }: ListData) {
         <Link href={`/${subFolder}/${id}`} key={id}>
           <a className={styles.post}>
             <div>
-              <em>{date}</em>
+              <small>{date}</small>
               <h3>{title}</h3>
               <div
                 dangerouslySetInnerHTML={{ __html: descriptionHtml ?? "" }}

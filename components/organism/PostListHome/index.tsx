@@ -22,7 +22,7 @@ export default function PostListHome({
     <div className={styles.container}>
       <div className={styles.title}>
         <h3>{pageTitle}</h3>
-        <em>{pageSubTitle}</em>
+        <small>{pageSubTitle}</small>
       </div>
       <div className={styles.postContainer}>
         {allPostsMeta

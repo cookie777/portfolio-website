@@ -134,16 +134,20 @@ div > p:first-child {
   margin-top: 0em;
 }
 
+// em is treated as italic so I don't want to use
 strong {
-  font-weight: 600;
-  color: $neutrals-text;
-}
-
-em {
   font-size: 0.8em;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: $neutrals-text-300;
+  color: $neutrals-text-strong;
+}
+
+// Used as opposite of strong. Weaken
+small {
+  font-size: 0.84em;
+  color: $neutrals-text-weak;
+}
+
 a {
   text-decoration: none;
   &:link {
@@ -160,8 +164,19 @@ a {
 
 // These styles are only adapted for single post page generated from .md
 .markdown {
-  // sub info under title.
-  h3 + p > em {
+
+  // This is teated <i>, _text_ at markdown. I use it as small.
+  p > em {
+    font-size: 0.84em;
+    color: $neutrals-text-weak;
+  }
+
+  // Any small info under header has small margin.
+  h1 + p > em,
+  h2 + p > em,
+  h3 + p > em,
+  h4 + p > em,
+  h5 + p > em {
     display: block;
     margin-top: -0.64em;
   }

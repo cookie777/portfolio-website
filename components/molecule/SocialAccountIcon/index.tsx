@@ -17,7 +17,7 @@ const SocialAccount = ({ path, name, account, link, prompt }: SocialMedia) => {
               height={iconSize}
             />
           </div>
-          <em>{account}</em>
+          <small>{account}</small>
         </a>
       </Link>
 
