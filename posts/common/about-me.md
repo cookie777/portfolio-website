@@ -1,61 +1,45 @@
 ---
 title: "About me"
 date: "2021-02-03"
-description: I'm a iOS mobile developer with extensive experience in designing, programming, maintaining, and troubleshooting applications in agile team environments. I'm self-motivated professional who is passionate about learning emerging technologies in the mobile landscape, architectures, and trends. I'm great at team work, as well as agile methodology and always test and write clean stable code with documentation.
+description: Software developer with extensive experience in designing, programming, maintaining, and troubleshooting applications in agile team environments. Self-motivated professional who is passionate about learning emerging technologies in the software landscape, architectures, and trends. Great at teamwork, as well as agile methodology and always test and write clean stable code with documentation. 
 ---
 
 ## Skills
 
-★★★ iOS:　　　　 Swift, Objective-C</br>
+★★★★ iOS:　　　　 Swift, Objective-C</br>
 ★★ Back-end:　　 Java, Python3</br>
-★ Front-end:　　　 Next.js, React.js</br>
+★★ Front-end:　　　 Next.js, React.js with Typescript</br>
 
-- Writing Swift full-time for iOS development.
-- A good understanding of mobile framework: UIKit, Cocoa Touch, RxSwift, diffable datasource
-- A good understanding for various mobile architectural patterns: MV\* and OOP
-- Familiarity with CoreData or Realm for data persistence
-- Understanding of networking and REST APIs and experience creating APIs with AWS.
-- Experience working as a UI designer several times with other developers
-- Familiar with Apple’s Human Interface Guidelines.
+- Experienced working with devs such as Android, QA, back-end developer, and UI/UX designer.
+- A good understanding of clean architecture, SOLID principles, interface oriented design, and DI
+- A good understanding of mobile framework: UIKit, SwiftUI, and RxSwift
+Experienced working as back-end developer for using AWS services such as DynamoDB, lambda, APIGateway
+- Skilled in modern Typescript framework including Next.js, React.js 
+- Familiar with REST-API, React-Hooks, asynchronous features, component (atomic-design), SSG(ISR), SSR
+- Experienced submitting an iOS application to the app store with 100% Swift code.
+
 
 ## Work Experience
 
-### iOS App Developer
+### Software Engineer/ iOS developer
 
-_Self-employed / Canada, Vancouver / March 1st 2021 - current_
+_Pela /  Kelowna, Canada / November  2021 - current_
 
-#### Queen's game / iOS game app
+- Published Lomi (a native iOS) app  to the App store with collaborating Android, QA, back-end developers, and UI/UX designer.
+- Developing IoT app using AWS-IoT interacting IoT Device
+- Worked with teammates under agile methodology using JIRA
+- Contributed to creating Authentication systems interacting with back-end servers.
+- Managed fundamental and essential features such as Navigation, DI, Localization, Accessibility, Logging, Analytics, Testing, and Build configurations.
 
-- Published an native iOS app to the [App Store](https://apps.apple.com/us/app/queens-game/id1575671780) with collaborating other developers. [Repository](https://github.com/DaiSugi01/Queens-game)
-- Implemented with MVVM, pattern with using reactive framework such as RxSwift.
-- Implemented using collection View, diffable data source, and Core Animations.
-- Contributed with most part of the implementation including animation and reactive feature.
-- Worked also as UI designer, collaborated closely with other developers and UI designers.
-- Planning to have iPhone/iPad apps in the App Store.
-- Created increased mobile adaptability for current apps in order to extend marketability.
+### Software Engineer/ Engineer - Technical and Engineering Division
 
-#### Hang-Out Planner / iOS navigation app
+ _Japanese Broadcasting Corporation / Tokyo, Japan / April 2016 - September 2020_
 
-- Created a native iOS app with collaborating other developers. [Repository](https://github.com/cookie777/Hang-Out-Planner)
-- Implement with concurrent REST-Api, modern Collection View, diffable data source, map kit, core location
-- Contributed as team leader, UI designer, manager.
-- Worked on bug fixing and improving application performance.
-- Checked on all source code to ensure usability by development staff.
-
-### Product manager and back-end developer / Web app
-
-_DPCode Inc. / Canada, Vancouver / May 1st 2021 – current_
-
-- Worked as Production Manager of [web application](https://dpcode.academy/), which is an open online course provider aimed at professional adults and - students.
-
-- As Production Manager:
-  - Designed fundamental system design including Next.js and AWS
-  - Designed and conducted unit and integration tests
-  - Coordinated tasks and schedules for all developers
-- As Back-end developer
-  - Designed DynamoDB schema
-  - Create REST-API with AWS lambda including test code
-  - Create Sign-up, Login feature with AWS Cognito
+- Develop, maintain and operate interactive data broadcasting systems between TV and users.
+- Maintain and update software programs such as broadcast order of TV programs and TV program listings.
+- Maintain and update the broadcast software and hardware server.
+- Prepare reports and manuals on the status, operation and maintenance of software and hardware equipment.
+- Research, identify and communicate technical problems, processes and solutions.
 
 ## Education
 
